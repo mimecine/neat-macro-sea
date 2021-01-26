@@ -40,8 +40,11 @@ collections:
       preview: true
     fields:
       - {label: "Title", name: "title", widget: "string" }
-      - {label: "Credits", name: "credits", widget: "string" }
-      - {label: "Body", name: "body", widget: "markdown" }
+      - {label: "Credits", name: "credits", widget: "markdown" }
+      - {label: "Description", name: "body", widget: "markdown" }
+      - label: "Images"
+        name: "images"
+        widget: "image"
       
   - label: "Settings"
     name: "settings"
