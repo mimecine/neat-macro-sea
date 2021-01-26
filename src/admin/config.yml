@@ -44,7 +44,10 @@ collections:
       - {label: "Description", name: "body", widget: "markdown" }
       - label: "Images"
         name: "images"
-        widget: "image"
+        widget: "list"
+        fields:
+          - {label: "Image", name: "image", widget: "image" }
+          - {label: "Caption/Alt", name: "caption", widget: "text" }
       
   - label: "Settings"
     name: "settings"
