@@ -30,6 +30,7 @@ collections:
         multiple: true
         create: true
         options: ["Tags", "created", "from", "config.yml"]
+        
   - label: "Projects"
     label_singular: "Project"
     name: "projects"
