@@ -47,7 +47,7 @@ collections:
         widget: "list"
         fields:
           - {label: "Image", name: "image", widget: "image" }
-          - {label: "Caption/Alt", name: "caption", widget: "text" }
+          - {label: "Caption/Alt", name: "caption", widget: "string" }
       
   - label: "Settings"
     name: "settings"
