@@ -41,10 +41,12 @@ collections:
       - {label: "Title", name: "title", widget: "string" }
       - {label: "Credits", name: "credits", widget: "string" }
       - {label: "Body", name: "body", widget: "markdown" }
-      - {label: "Images", name: "images", widget: "list", fields:
+      - label: "Images"
+        name: "images"
+        widget: "list", 
+        fields:
           - {label: "Image", name: "image", widget: "image" }
           - {label: "Caption", name: "caption", widget: "text" }
-        }
       
   - label: "Settings"
     name: "settings"
