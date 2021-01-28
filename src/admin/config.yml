@@ -33,12 +33,8 @@ collections:
         name: "images"
         widget: "list"
         fields:
-          - label: "Image"
-            name: "image"
-            widget: "object"
-            fields:
-              - {label: "Image", name: "src", widget: "image" }
-              - {label: "Caption/Alt", name: "caption", widget: "string" }
+          - {label: "Image", name: "image", widget: "image" }
+          - {label: "Caption/Alt", name: "caption", widget: "string" }
       
   - label: "Settings"
     name: "settings"
