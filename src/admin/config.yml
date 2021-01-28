@@ -21,20 +21,21 @@ collections:
       preview: true
     fields:
       - {label: "Title", name: "title", widget: "string" }
-      - {label: "Credits", name: "credits", widget: "markdown" }
       - {label: "Description", name: "body", widget: "markdown" }
-      - widget: select
-        label: "tags"
-        name: "tags"
-        multiple: true
-        create: true
-        options: ["Tags", "created", "from", "config.yml"]
+      - {label: "Credits", name: "credits", widget: "markdown" }
       - label: "Images"
         name: "images"
         widget: "list"
         fields:
           - {label: "Image", name: "image", widget: "image" }
           - {label: "Caption/Alt", name: "caption", widget: "string" }
+      - widget: "list"
+        label: "tags"
+        name: "tags"
+        multiple: true
+        create: true
+        field:
+          - {widget: "string", label: "Tag", name: "tag"}
       
   - label: "Settings"
     name: "settings"
