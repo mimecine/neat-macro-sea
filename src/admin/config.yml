@@ -49,6 +49,7 @@ collections:
           - label: "Category"
             name: "category"
             widget: string
+            allow_add: true
       - label: "Navigation"
         name: "items"
         file: "src/_data/navigation.yaml"
