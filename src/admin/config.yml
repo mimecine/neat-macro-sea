@@ -32,8 +32,6 @@ collections:
       - widget: "list"
         label: "tags"
         name: "tags"
-        multiple: true
-        create: true
         field:
           - {widget: "string", label: "Tag", name: "tag"}
       
