@@ -29,11 +29,12 @@ collections:
         fields:
           - {label: "Image", name: "image", widget: "image" }
           - {label: "Caption/Alt", name: "caption", widget: "string" }
-      - widget: "list"
-        label: "tags"
-        name: "tags"
-        field:
-          - {widget: "string", label: "Tag", name: "tag"}
+      - widget: select
+        label: tags
+        name: tags
+        multiple: true
+        create: true
+        options: ["Country Club","Junk","Catharctic","Breaking shit","Flatbed Truck", "Save the earth","Art","Vacant lot"]
       
   - label: "Settings"
     name: "settings"
