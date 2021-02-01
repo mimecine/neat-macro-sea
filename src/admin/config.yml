@@ -35,6 +35,14 @@ collections:
         multiple: true
         create: true
         options: ["Country Club","Junk","Catharctic","Breaking shit","Flatbed Truck", "Save the earth","Art","Vacant lot"]
+
+  - label: "Categories"
+    name: "categories"
+    file: "src/_data/categories.yaml"
+    field:
+      - label: "Category"
+        name: "category"
+        widget: string
       
   - label: "Settings"
     name: "settings"
