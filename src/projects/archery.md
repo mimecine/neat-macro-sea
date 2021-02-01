@@ -14,6 +14,12 @@ images:
     caption: Archery range
   - image: /static/img/1.archery_-rendering_overpass_opt.jpg
     caption: Green Stuff
+  - image: /static/img/2.archery_rendering_shootfriends_opt.jpg
+    caption: High Shooter
+  - image: /static/img/3.archery_inspiration-resize_opt.jpg
+    caption: Silhouette
+  - image: /static/img/4.archery_rendering_parkinglot_opt.jpg
+    caption: Red building
 tags:
   - Country Club
   - Vacant lot
