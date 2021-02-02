@@ -24,3 +24,11 @@ path: home
     </article></a>
   {% endfor %}
 </div>
+
+<div class="container mx-auto lg:h-screen flex flex-row justify-between items-center">
+  Products: {% for product in collections.products%}
+    <a href="{{product.url}}"><article class="border w-full md:w-1/5 h-20 p-4">
+    {{product.data.title}} / ${{product.data.price}}
+    </article></a>
+  {% endfor %}
+</div>
