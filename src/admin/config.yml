@@ -17,8 +17,15 @@ collections:
     name: "projects"
     folder: "src/projects"
     create: true
+    delete: true
     editor:
       preview: true
+    summary: "{{title}} {{body}}"
+    view_groups: 
+      - label: "By Tag"
+      - field: tags
+      - pattern: \w+
+
     fields:
       - {label: "Title", name: "title", widget: "string" }
       - {label: "Description", name: "body", widget: "markdown" }
