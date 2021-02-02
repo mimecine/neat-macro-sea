@@ -8,8 +8,26 @@ layout: default
         <h3>{{price}}</h3>
 
     </div>
-    <article class="prose lg:prose-xl my-4 mx-auto">
+    <article class="prose lg:prose-xl my-4 mx-auto flo">
+        {% respimg 
+            images[0].image, 
+            images[0].caption, 
+            "",
+            { small: 320, med: 640, large: 1024 },
+            "(min-width: 450px) 33.3vw, 100vw",
+            "border float-right",
+            "1024",
+            "768"
+        %}{% endrespimg %}
         {{ body | safe }}
+        <button class="snipcart-add-item border border-black border-4"
+        data-item-id="{{title|slug}}"
+        data-item-price="{{price}}"
+        data-item-url="/products/{{title|slug}}"
+        data-item-image="{{images[0].image}}"
+        data-item-name="{{title}}">
+        Add to cart
+      </button>    
     </article>
 
 </div>
