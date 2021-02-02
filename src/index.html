@@ -6,21 +6,21 @@ path: home
 
 <div class="container mx-auto lg:h-screen flex flex-row justify-between items-center">
   {% for project in collections.projects %}
-    <article class="border w-full md:w-1/5 h-20 p-4">
+    <a href="{{project.url}}"><article class="border w-full md:w-1/5 h-20 p-4">
       <h4>{{project.data.title}}</h4>
-      
-      <div>{{project.templateContent | safe }}</div>
-
       {% respimg 
     project.data.images[0].image, 
     project.data.images[0].caption, 
     "",
     { small: 320, med: 640, large: 1024 },
     "(min-width: 450px) 33.3vw, 100vw",
-    "class-one class-two",
+    "border",
     "1024",
     "768"
 %}{% endrespimg %}
-    </article>
+      
+      {# <div>{{project.templateContent | safe }}</div> #}
+
+    </article></a>
   {% endfor %}
 </div>
