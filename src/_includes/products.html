@@ -22,8 +22,8 @@ layout: default
         {{ body | safe }}
         <button class="snipcart-add-item border border-black border-4"
         data-item-id="{{title|slug}}"
-        data-item-price="{{price}}"
-        data-item-url="/products/{{title|slug}}"
+        data-item-price="{{price}}.00"
+        data-item-url="/products/{{title|slug}}/"
         data-item-image="{{images[0].image}}"
         data-item-name="{{title}}">
         Add to cart
