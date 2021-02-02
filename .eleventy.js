@@ -3,6 +3,9 @@ const { DateTime } = require("luxon");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const htmlmin = require("html-minifier");
 
+const respimg = require("eleventy-plugin-sharp-respimg");
+
+
 module.exports = function (eleventyConfig) {
   // Disable automatic use of your .gitignore
   eleventyConfig.setUseGitIgnore(false);
@@ -19,6 +22,9 @@ module.exports = function (eleventyConfig) {
 
   // Syntax Highlighting for Code blocks
   eleventyConfig.addPlugin(syntaxHighlight);
+
+  eleventyConfig.addPlugin(respimg);
+
 
   // To Support .yaml Extension in _data
   // You may remove this if you can use JSON

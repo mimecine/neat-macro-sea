@@ -23,8 +23,8 @@ collections:
     summary: "{{title}} {{body}}"
     view_groups: 
       - label: "By Tag"
-      - field: tags
-      - pattern: \w+
+        field: tags
+        pattern: \w+
 
     fields:
       - {label: "Title", name: "title", widget: "string" }
@@ -88,3 +88,30 @@ collections:
           - { label: Name, name: name, widget: string }
           - { label: Author, name: author, widget: string }
           - { label: URL, name: url, widget: string }
+
+  - label: "Products"
+    label_singular: "Product"
+    name: "products"
+    folder: "src/products"
+    create: true
+    delete: true
+    editor:
+      preview: true
+    summary: "{{title}} - {{price}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string" }
+      - {label: "Description", name: "body", widget: "markdown" }
+      - {label: "Price", name: "price", widget: "number" }
+      - label: "Images"
+        name: "images"
+        widget: "list"
+        fields:
+          - {label: "Image", name: "image", widget: "image" }
+          - {label: "Caption/Alt", name: "caption", widget: "string" }
+      - widget: select
+        label: tags
+        name: tags
+        multiple: true
+        create: true
+        options: ["Country Club","Junk","Catharctic","Breaking shit","Flatbed Truck", "Save the earth","Art","Vacant lot"]
+
