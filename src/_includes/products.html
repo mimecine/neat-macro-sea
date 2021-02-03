@@ -9,16 +9,8 @@ layout: default
 
     </div>
     <article class="prose lg:prose-xl my-4 mx-auto flo">
-        {% respimg 
-            images[0].image, 
-            images[0].caption, 
-            "",
-            { small: 320, med: 640, large: 1024 },
-            "(min-width: 450px) 33.3vw, 100vw",
-            "border float-right",
-            "1024",
-            "768"
-        %}{% endrespimg %}
+        {% image images[0].image, images[0].caption, "border", "(min-width: 30em) 50vw, 100vw" %}
+
         {{ body | safe }}
         <button class="snipcart-add-item border border-black border-4"
         data-item-id="{{title|slug}}"

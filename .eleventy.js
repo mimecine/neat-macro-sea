@@ -3,8 +3,34 @@ const { DateTime } = require("luxon");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const htmlmin = require("html-minifier");
 
-const respimg = require("eleventy-plugin-sharp-respimg");
+const path = require("path");
+const Image = require("@11ty/eleventy-img");
 
+async function imageShortcode(src, alt, classes, sizes) {
+  let metadata = await Image('./src/'+src, {
+    widths: [300, 600, 900, 1200, 2400],
+    outputDir: "./_site/static/img/",
+    urlPath: "/static/img/",
+    formats: ["avif","webp", "jpeg"],
+    filenameFormat: function (id, src, width, format, options) {
+      const extension = path.extname(src);
+      const name = path.basename(src, extension);
+  
+      return `${name}-${width}w.${format}`;
+    }
+  });
+
+  let imageAttributes = {
+    alt,
+    sizes,
+    loading: "lazy",
+    decoding: "async",
+    class: classes
+  };
+
+  // You bet we throw an error on missing alt in `imageAttributes` (alt="" works okay)
+  return Image.generateHTML(metadata, imageAttributes,{whitespaceMode: "inline"});
+}
 
 module.exports = function (eleventyConfig) {
   // Disable automatic use of your .gitignore
@@ -23,7 +49,10 @@ module.exports = function (eleventyConfig) {
   // Syntax Highlighting for Code blocks
   eleventyConfig.addPlugin(syntaxHighlight);
 
-  eleventyConfig.addPlugin(respimg);
+  eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
+  eleventyConfig.addLiquidShortcode("image", imageShortcode);
+  eleventyConfig.addJavaScriptFunction("image", imageShortcode);
+
 
 
   // To Support .yaml Extension in _data

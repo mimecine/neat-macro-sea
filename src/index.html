@@ -8,7 +8,10 @@ path: home
   {% for project in collections.projects %}
     <a href="{{project.url}}"><article class="border w-full md:w-1/5 h-20 p-4">
       <h4>{{project.data.title}}</h4>
-      {% respimg 
+
+      {% image project.data.images[0].image, project.data.images[0].caption, "border", "(min-width: 30em) 50vw, 100vw" %}
+
+      {# {% respimg 
     project.data.images[0].image, 
     project.data.images[0].caption, 
     "",
@@ -17,7 +20,7 @@ path: home
     "border",
     "1024",
     "768"
-%}{% endrespimg %}
+%}{% endrespimg %} #}
       
       {# <div>{{project.templateContent | safe }}</div> #}
 
