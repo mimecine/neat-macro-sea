@@ -10,13 +10,13 @@
     {% if description %}
       <meta name="description" content="{{description}}"/>
     {% endif %}
-    {% block head %}{% endblock %}
     <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
     <link rel="preconnect" href="https://app.snipcart.com">
     <link rel="preconnect" href="https://cdn.snipcart.com">
-    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.28/default/snipcart.css" />
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.29/default/snipcart.css" />
+    {% block head %}{% endblock %}
   </head>
-  <body>
+  <body class="bg-pink-100 font-thin">
     {% include "./partials/navbar.html" %}
 
     {{ content | safe }}
@@ -24,13 +24,17 @@
     {% include "./partials/footer.html" %}
 
     <script src="/static/js/alpine.js"></script>
+    <script src="/static/js/Tocca.min.js"></script>
 
     {% if path == "home" %}
       <!-- Netlify Identity Widget -->
       <!-- Needed only if you are using Netlify Identity feature -->
       <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     {% endif %}
-    <script async src="https://cdn.snipcart.com/themes/v3.0.28/default/snipcart.js"></script>
-    <div hidden id="snipcart" data-api-key="YzQwZjRjOGItODdjNi00NzczLThmNWYtYjM0NWY4MDQ3MTI5NjM3MDMzNjMyMzExNjk2NzM2" data-config-modal-style="side"></div>
+    <script async src="https://cdn.snipcart.com/themes/v3.0.29/default/snipcart.js"></script>
+    <div hidden id="snipcart" data-api-key="YzQwZjRjOGItODdjNi00NzczLThmNWYtYjM0NWY4MDQ3MTI5NjM3MDMzNjMyMzExNjk2NzM2" 
+      data-config-modal-style="side" data-config-add-product-behavior="none">
+
+    </div>
   </body>
 </html>

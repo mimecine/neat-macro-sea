@@ -7,15 +7,15 @@ const path = require("path");
 const Image = require("@11ty/eleventy-img");
 
 async function imageShortcode(src, alt, classes, sizes) {
-  let metadata = await Image('./src/'+src, {
+  let metadata = await Image('./src/' + src, {
     widths: [300, 600, 900, 1200, 2400],
     outputDir: "./_site/static/img/",
     urlPath: "/static/img/",
-    formats: ["avif","webp", "jpeg"],
+    formats: ["webp", "jpeg"],
     filenameFormat: function (id, src, width, format, options) {
       const extension = path.extname(src);
       const name = path.basename(src, extension);
-  
+
       return `${name}-${width}w.${format}`;
     }
   });
@@ -29,7 +29,7 @@ async function imageShortcode(src, alt, classes, sizes) {
   };
 
   // You bet we throw an error on missing alt in `imageAttributes` (alt="" works okay)
-  return Image.generateHTML(metadata, imageAttributes,{whitespaceMode: "inline"});
+  return Image.generateHTML(metadata, imageAttributes, { whitespaceMode: "inline" });
 }
 
 module.exports = function (eleventyConfig) {
@@ -69,8 +69,7 @@ module.exports = function (eleventyConfig) {
     "./_tmp/static/css/style.css": "./static/css/style.css",
     "./src/admin/config.yml": "./admin/config.yml",
     "./node_modules/alpinejs/dist/alpine.js": "./static/js/alpine.js",
-    "./node_modules/prismjs/themes/prism-tomorrow.css":
-      "./static/css/prism-tomorrow.css",
+    "./node_modules/tocca/Tocca.min.js": "./static/js/Tocca.min.js",
   });
 
   // Copy Image Folder to /_site

@@ -4,27 +4,15 @@ title: Macro-Sea
 path: home
 ---
 
-<div class="container mx-auto lg:h-screen flex flex-row justify-between items-center">
+<div class="container mx-auto flex flex-row flex-wrap justify-between items-center content-start">
   {% for project in collections.projects %}
-    <a href="{{project.url}}"><article class="border w-full md:w-1/5 h-20 p-4">
-      <h4>{{project.data.title}}</h4>
-
-      {% image project.data.images[0].image, project.data.images[0].caption, "border", "(min-width: 30em) 50vw, 100vw" %}
-
-      {# {% respimg 
-    project.data.images[0].image, 
-    project.data.images[0].caption, 
-    "",
-    { small: 320, med: 640, large: 1024 },
-    "(min-width: 450px) 33.3vw, 100vw",
-    "border",
-    "1024",
-    "768"
-%}{% endrespimg %} #}
-      
+    {%for image in project.data.images %}
+    <figure class="center">
+          <a href="{{project.url}}">{% image image.image, image.caption, "border object-fill max-h-32 w-auto m-3", "(min-width: 30em) 50vw, 100vw" %}</a>  
+          <figcaption class="center">{{loop.index}}x</figcaption>  
       {# <div>{{project.templateContent | safe }}</div> #}
-
-    </article></a>
+    </figure>
+    {%endfor%}
   {% endfor %}
 </div>
 
