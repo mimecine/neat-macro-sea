@@ -10,7 +10,19 @@ layout: default
 
     </div>
     <article class="prose lg:prose-xl my-4 mx-auto">
-        {{ body | safe }}
+        <div>{{ content | safe }}</div>
+        <div>
+        {%for image in images%}
+        <figure class="x xtext-center">
+            {% image image.image, image.caption, "border object-fill w-full my-1 lg:my-1", "(min-width: 30em) 50vw, 100vw" %}</a>  
+            <figcaption class="m-0">{{image.caption}}</figcaption>  
+        </figure>
+        {%endfor%}
+        </div>
+        <div>
+            {{ credits| md | safe }}
+        </div>
+
     </article>
 
 </div>

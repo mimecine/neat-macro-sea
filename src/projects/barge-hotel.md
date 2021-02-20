@@ -1,16 +1,16 @@
 ---
 title: Barge Hotel
 credits: |-
-  CONCEPT, DESIGN + DIRECTION
+  CONCEPT, DESIGN + DIRECTION:\
   David Belt, Executive Director, Macro Sea
 
-  COLLABORATION + CONSULTING
+  COLLABORATION + CONSULTING:\
   Jocko Weyland, Aesthetic Collaborator + Consultant, Macro Sea
 
-  DESIGN + VISUALIZATION
+  DESIGN + VISUALIZATION:\
   Elise DeChard, Lead Designer, Macro Sea
 
-  DESIGN DEVELOPMENT + PROJECT MANAGEMENT
+  DESIGN DEVELOPMENT + PROJECT MANAGEMENT:\
   Rebecca Birmingham, General Counsel + Creative Director, Macro Sea
 images:
   - image: /static/img/bargehotel.0.barge-hotel_rendering_night-resized-for-web.jpg
@@ -30,5 +30,7 @@ images:
 tags:
   - Save the earth
   - Country Club
+gallery:
+  - fdads
 ---
 Traditionally, hotels are all about location, location, location. We wondered what it might look like to create a traveling hotel whose personality can adapt to its surroundings and migrate with the season.

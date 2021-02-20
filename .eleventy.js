@@ -6,6 +6,10 @@ const htmlmin = require("html-minifier");
 const path = require("path");
 const Image = require("@11ty/eleventy-img");
 
+const markdown = require("markdown-it")({
+  html: true
+});
+
 async function imageShortcode(src, alt, classes, sizes) {
   let metadata = await Image('./src/' + src, {
     widths: [300, 600, 900, 1200, 2400],
@@ -53,6 +57,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addLiquidShortcode("image", imageShortcode);
   eleventyConfig.addJavaScriptFunction("image", imageShortcode);
 
+  eleventyConfig.addFilter("md",content=>markdown.render(content));
+
 
 
   // To Support .yaml Extension in _data
@@ -64,7 +70,7 @@ module.exports = function (eleventyConfig) {
   // Add Tailwind Output CSS as Watch Target
   eleventyConfig.addWatchTarget("./_tmp/static/css/style.css");
 
-  // Copy Static Files to /_Site
+  // Copy Static Files to /_site
   eleventyConfig.addPassthroughCopy({
     "./_tmp/static/css/style.css": "./static/css/style.css",
     "./src/admin/config.yml": "./admin/config.yml",
