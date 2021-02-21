@@ -8,41 +8,22 @@ path: home
   {% for project in collections.projects %}
     {%set index = loop.index %}
     {%for image in project.data.images %}
-    <figure class="x text-center">
-          <a href="{{project.url}}">{% image image.image, image.caption, "border object-fill md:max-h-32 w-auto m-1 lg:m-3", "14em" %}</a>  
+    <figure class="text-center mt-3" data-tags="{{project.data.tags}}">
+          <a href="{{project.url}}">{% image image.image, image.caption, "border object-fill md:max-h-40 w-auto hover:filter-grayscale hover:shadow-2xl", "(min-width: 600px) 600px, 14em" %}</a>  
           <figcaption class="">{{index}}.{{loop.index}}</figcaption>  
     </figure>
     {%endfor%}
   {% endfor %}
-    <i aria-hidden class="x invisible"></i>
-    <i aria-hidden class="x invisible"></i>
-    <i aria-hidden class="x invisible"></i>
-    <i aria-hidden class="x invisible"></i>
-    <i aria-hidden class="x invisible"></i>
-    <i aria-hidden class="x invisible"></i>
-    <i aria-hidden class="x invisible"></i>
-    <i aria-hidden class="x invisible"></i>
-    <i aria-hidden class="x invisible"></i>
-    <i aria-hidden class="x invisible"></i>
-</div>
-
-<div class="container mx-auto md:flex flex-row flex-wrap justify-between items-center content-start">
   {% for product in collections.products%}
     {%if product.data.images[0] %}
-    <figure class="x text-center">
-          <a href="{{product.url}}">{% image product.data.images[0].image, product.data.images[0].caption, "border object-fill max-h-32 w-auto m-1 lg:m-3", "(min-width: 30em) 50vw, 100vw" %}</a>  
+    <figure class="text-center mt-3">
+          <a href="{{product.url}}">{% image product.data.images[0].image, product.data.images[0].caption, "border object-fill md:max-h-40 w-auto hover:filter-grayscale hover:shadow-2xl", "(min-width: 600px) 600px, 14em" %}</a>  
           <figcaption class="">${{product.data.price}}</figcaption>
     </figure>
     {%endif%}
   {% endfor %}
-    <i aria-hidden class="x invisible"></i>
-    <i aria-hidden class="x invisible"></i>
-    <i aria-hidden class="x invisible"></i>
-    <i aria-hidden class="x invisible"></i>
-    <i aria-hidden class="x invisible"></i>
-    <i aria-hidden class="x invisible"></i>
-    <i aria-hidden class="x invisible"></i>
-    <i aria-hidden class="x invisible"></i>
-    <i aria-hidden class="x invisible"></i>
-    <i aria-hidden class="x invisible"></i>
+
+  {%for i in range(1,4) %}
+    <i aria-hidden class="x invisible border-red-200 border-2 w-1/5"> </i>
+  {% endfor %}
 </div>

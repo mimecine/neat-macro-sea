@@ -27,7 +27,7 @@ async function imageShortcode(src, alt, classes, sizes) {
   let imageAttributes = {
     alt,
     sizes,
-    loading: "lazy",
+    // loading: "lazy",
     decoding: "async",
     class: classes
   };
@@ -75,6 +75,8 @@ module.exports = function (eleventyConfig) {
     "./_tmp/static/css/style.css": "./static/css/style.css",
     "./src/admin/config.yml": "./admin/config.yml",
     "./node_modules/alpinejs/dist/alpine.js": "./static/js/alpine.js",
+    "./node_modules/turbolinks/dist/turbolinks.js":"./static/js/turbolinks.js",
+    "./node_modules/alpine-turbo-drive-adapter/dist/alpine-turbo-adapter.js":"./static/js/alpine-turbo-adapter.js",
     "./node_modules/tocca/Tocca.min.js": "./static/js/Tocca.min.js",
   });
 
