@@ -10,7 +10,7 @@
     src: url(/fonts/proxima-nova/400-regular.woff) format("woff");
   } */
   h1 {
-    @apply text-4xl tracking-tighter mb-3 text-center lg:text-7xl;
+    @apply text-4xl font-thin tracking-wider mb-3 text-center lg:text-7xl;
   }
 
   h3 {
@@ -24,11 +24,14 @@
     scroll-margin-top: 2ex;
   }
   :target {
-    text-decoration: underline;
+    /* text-decoration: underline;
     text-decoration-thickness: 2ex;
     text-decoration-color: #c4e4fb;
     text-decoration-skip-ink: none;
-    text-underline-offset: -2.8ex;
+    text-underline-offset: -2.8ex; */
+
+    text-shadow: red 0 0 2rem;
+    color: white !important;
   }
   
   @media (prefers-reduced-motion: no-preference) {

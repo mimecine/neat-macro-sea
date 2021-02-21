@@ -10,7 +10,7 @@ layout: default
 
 <div class="container max-w-4xl mt-6  px-6">
     <div class="pb-5 mb-5 border-b border-gray-100">
-        <h1 class="font-bold text-5xl">{{title}}</h1>
+      <h1 class="font-thin text-5xl uppercase tracking-wider">{{title}}</h1>
     </div>
     <article class="prose lg:prose-xl my-4 mx-auto flo">
         {% image images[0].image, images[0].caption, "border w-full", "(min-width: 30em) 50vw, 100vw" %}
@@ -18,7 +18,7 @@ layout: default
         {{ content | safe }}
 
 
-        <span class="text-2xl text-red-600">Only ${{price}}.00!<sup>1)</sup> 
+        <span class="text-2xl text-red-600">Only ${{price}}.00! <sup class="text-sm"><a href="#footnote1" class="no-underline text-gray-500">*1)</a></sup> 
         <br>
         <button class="snipcart-add-item border border-black border-2 px-4 py-1 bg-pink-50"
         data-item-id="{{title|slug}}"
@@ -32,10 +32,10 @@ layout: default
         You deserve this thing. We deserve your money.
         </span>
         <br>
-        <span class="text-xs italics text-gray-500">1. - Before shipping, taxes, fees, their cut, and our cut!</span>
+        <p id="footnote1" class="text-xs pt-40 italics text-gray-500">1. - Before shipping, taxes, fees, their cut, and our cut!</p>
     </article>
 
 </div>
 <div hidden id="snipcart" data-api-key="YzQwZjRjOGItODdjNi00NzczLThmNWYtYjM0NWY4MDQ3MTI5NjM3MDMzNjMyMzExNjk2NzM2" 
-  data-config-modal-style="side" data-config-add-product-behavior="none">
+  data-config-modal-style="side" data-config-add-product-behavior="xnone">
 
