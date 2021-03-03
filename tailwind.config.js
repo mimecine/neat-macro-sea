@@ -1,6 +1,6 @@
 module.exports = {
   purge: {
-    mode: "all",
+    mode: "none",
     content: ["./**/*.html"],
     options: {
       whitelist: [],
