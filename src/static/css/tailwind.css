@@ -40,20 +40,6 @@
     }
   }
 
-  /*****   SNIPCART CUSTOMIZATION *****/
-  #snipcart.snipcart * {
-    @apply font-sans font-thin;
-  }
-  #snipcart.snipcart .snipcart-cart-button--highlight {
-    background-image: none;
-    @apply bg-pink-500;
-  }
-
-  #snipcart.snipcart .snipcart__font--black {
-    @apply font-thin tracking-wider;
-  }
-
-
 }
 
 @layer components {
@@ -86,3 +72,17 @@
     }
   }
 }
+
+  /*****   SNIPCART CUSTOMIZATION *****/
+  #snipcart.snipcart * {
+    @apply font-sans font-thin;
+  }
+  #snipcart.snipcart .snipcart-cart-button--highlight {
+    background-image: none;
+    @apply bg-pink-500;
+  }
+
+  #snipcart.snipcart .snipcart__font--black {
+    @apply font-thin tracking-wider;
+  }
+
