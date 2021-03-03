@@ -21,10 +21,10 @@ images:
   - image: /static/img/4.archery_rendering_parkinglot_opt.jpg
     caption: Red building
 tags:
-  - Country Club
-  - Vacant lot
-gallery:
-  - ghghg
+  - are fun
+  - are dangerous
+  - didn't get built 
+  - were proposed
 ---
 
 

@@ -16,6 +16,12 @@
     <!-- <script src="/static/js/turbolinks.js"></script> -->
     <script src="/static/js/Tocca.min.js"></script>
 
+    <link rel="preconnect" href="https://app.snipcart.com">
+<link rel="preconnect" href="https://cdn.snipcart.com">
+<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.29/default/snipcart.css" />
+<script async defer src="https://cdn.snipcart.com/themes/v3.0.29/default/snipcart.js"></script>
+
+
  
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />    
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -31,7 +37,9 @@
 
     {% include "./partials/footer.html" %}
 
-
+    <div hidden id="snipcart" data-api-key="YzQwZjRjOGItODdjNi00NzczLThmNWYtYjM0NWY4MDQ3MTI5NjM3MDMzNjMyMzExNjk2NzM2" 
+    data-config-modal-style="side" data-config-add-product-behavior="xnone">
+  
     {% if path == "x-home" %}
       <!-- Netlify Identity Widget -->
       <!-- Needed only if you are using Netlify Identity feature -->

@@ -28,9 +28,8 @@ images:
   - image: /static/img/bargehotel.6.barge-hotel_inspiration_barge1.jpg
     caption: "Inspiration: Working Barge"
 tags:
-  - Save the earth
-  - Country Club
-gallery:
-  - fdads
+  - you can use
+  - didn't get built
+  - are fun
 ---
 Traditionally, hotels are all about location, location, location. We wondered what it might look like to create a traveling hotel whose personality can adapt to its surroundings and migrate with the season.
