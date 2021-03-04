@@ -67,22 +67,30 @@
       filter: grayscale(100%);
     }
     .filter-xerox {
-      mix-blend-mode:screen;
-      filter: invert(0) grayscale(100%) contrast(400%);
+      mix-blend-mode: screen;
+      filter: invert(0) grayscale(100%) contrast(500%);
+    }
+    .filter-xerox-new {
+      mix-blend-mode: color;
+      filter: invert(1) grayscale(100%) contrast(500%) sepia(100%) saturate(400%) hue-rotate(45deg);
     }
   }
 }
 
   /*****   SNIPCART CUSTOMIZATION *****/
   #snipcart.snipcart * {
-    @apply font-sans font-thin;
+    @apply font-sans font-light tracking-wider;
   }
-  #snipcart.snipcart .snipcart-cart-button--highlight {
+  #snipcart.snipcart .snipcart-cart-button--highlight, #snipcart.snipcart .snipcart__box--badge-highlight {
     background-image: none;
-    @apply bg-pink-500;
+    @apply bg-ms-green;
   }
 
   #snipcart.snipcart .snipcart__font--black {
-    @apply font-thin tracking-wider;
+    @apply font-light tracking-wider;
+  }
+
+  #snipcart.snipcart .snipcart-cart__secondary-header {
+    @apply bg-ms-green;
   }
 
