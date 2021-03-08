@@ -18,6 +18,8 @@ module.exports = {
       },
     },
   },
-  variants: {},
-  plugins: [require("@tailwindcss/typography")],
+  variants: {
+    scrollSnapType: ['responsive'],
+  },
+  plugins: [require("@tailwindcss/typography"),require('tailwindcss-scroll-snap')],
 };

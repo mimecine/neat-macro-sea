@@ -1,5 +1,5 @@
-<div class="{{ 'lg:sticky lg:top-0' if path == 'home' }} sticky top-0 w-full bg-gray-100 opacity-95 md:text-lg lg:text-3xl font-thin">
-    <nav class="flex items-center justify-center lg:justify-between flex-wrap py-2 lg:py-5 lg:px-0 container mx-auto" x-data="{ isOpen: false }" @keydown.escape="isOpen = false" x-bind:class="{ 'bg-ms-blue': isOpen }">
+<div class="{{ 'lg:sticky lg:top-0' if path == 'home' }} sticky top-0 w-full bg-gray-100 xopacity-95 md:text-lg lg:text-3xl font-thin z-10">
+    <nav class="flex items-center justify-center lg:justify-between flex-wrap py-2 lg:py-5 lg:px-0 container mx-auto" x-data="{ isOpen: false }" @keydown.escape="isOpen = false" x-bind:class="{ 'bg-ms-green': isOpen }">
         <!--Logo etc-->
         <div class="flex items-center w-1/3 text-right">
             <a href="/" class="text-gray-500">
@@ -14,10 +14,10 @@
                 <path x-show="isOpen" fill-rule="evenodd" clip-rule="evenodd" d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"/>
                 <path x-show="!isOpen" fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
             </svg> -->
-            THINGS THAT: <span class="x border-b border-current w-2/5">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            THINGS THAT: <span class="x border-b border-current min-w-2/5 mx-2">&nbsp;&nbsp;&nbsp;&nbsp;</span>
         </button>
 
-        <div class="flex justify-end w-1/3" >
+        <div class="flex justify-end w-1/3 pr-3">
             <a href="/info" class="text-gray-500">INFO</a>
             <div>
                 <button hidden class="snipcart-checkout text-gray-500  pl-4 font-thin">BAG <sup class="text-sm text-red-500">(<span class="snipcart-items-count"></span>)</sup></button>
