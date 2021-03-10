@@ -19,12 +19,8 @@ collections:
     create: true
     delete: true
     editor:
-      preview: true
-    summary: "TITLE: {{title}} ( {{tags}} )"
-    view_groups: 
-      - label: "By Tag"
-        field: tags
-        pattern: \w+
+      preview: false
+    summary: "{{title}} - Tagged: {{tags}} "
 
     fields:
       - {label: "Title", name: "title", widget: "string" }
@@ -36,7 +32,6 @@ collections:
         summary: '{{fields.image}}'
         fields:
           - {label: "Image", name: "image", widget: "image" }
-          - {label: "Caption/Alt", name: "caption", widget: "string" }
       - widget: list
         label: "Things that... (comma-separated)"
         name: tags
