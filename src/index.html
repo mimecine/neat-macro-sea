@@ -9,7 +9,7 @@ path: home
     {%set index = loop.index %}
     {%for image in project.data.images %}
     <figure class="text-center mt-3 mr-3 snap-start" data-tags="{{project.data.tags}}">
-          <a href="{{project.url}}"><div class="bg-ms-yellow hover:filter-y" xstyle="background-size: cover;   background-position-x: center; background-position-y: center;  background-image:{% imageset image.image, '50 60' %}">{% image image.image, image.caption, " object-fill md:max-h-40 w-auto -square- md:h-40 md:w-40 md:object-cover", "(max-width: 768px) 100vw,  16em" %}</div></a>  
+          <a href="{{project.url}}"><div class="bg-ms-yellow hover:filter-y">{% image image.image, image.caption, " object-fill md:max-h-40 w-auto -square- md:h-40 md:w-40 md:object-cover", "(max-width: 768px) 100vw,  16em" %}</div></a>  
           <figcaption class="">{{index}}.{{loop.index}}</figcaption>  
     </figure>
     {%endfor%}

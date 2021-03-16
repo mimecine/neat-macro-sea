@@ -4,8 +4,7 @@ module.exports = {
 //    require(`@tailwindcss/jit`)(`./tailwind.config.js`),
 //    require(`postcss-preset-env`)({ stage: 1 }),
     require(`autoprefixer`),
-    ...(process.env.NODE_ENV === "production"
-      ? [
+    ...(process.env.NODE_ENV === "production" ? [
           require(`cssnano`)({
             preset: "default",
           }),
