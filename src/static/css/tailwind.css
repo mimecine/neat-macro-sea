@@ -8,7 +8,19 @@
     font-family: Proxima Nova;
     font-weight: 400;
     src: url(/fonts/proxima-nova/400-regular.woff) format("woff");
-  } */
+  } */ 
+
+  :root {
+    --ms-bg: #f3f4f6;
+    --ms-yellow: #F9D44D;
+    --ms-blue: #3FBEF8;
+    --ms-green: #50E986 ;
+    --filter-x-contrast: 2;
+    --filter-x-invert: 0;
+    --filter-x-bg: var(--ms-bg);
+    --filter-x-color: var(--ms-yellow);
+  }
+
   h1 {
     @apply text-4xl font-thin tracking-wider mb-3 text-center lg:text-7xl;
   }
@@ -48,24 +60,32 @@
   }
 }
 @layer utilities {
-  @variants responsive {
 
+
+
+
+  @variants responsive {
+    .grid-pancake-stack {
+      grid-template-rows: auto 1fr auto;
+    }
   }
   @variants dark, focus, hover {
-    .filter-none {
-      filter: none;
+
+    .filter-y {
+      @apply flex flex-auto h-full overflow-hidden relative;
+      background-color: var(--filter-x-color);
+      background-image: none !important;
     }
-    .filter-grayscale {
-      filter: grayscale(100%);
-    }
-    .filter-xerox {
-      mix-blend-mode: screen;
-      filter: invert(0) grayscale(100%) contrast(500%);
-    }
-    .filter-xerox-new {
-      mix-blend-mode: color;
-      filter: invert(1) grayscale(100%) contrast(500%) sepia(100%) saturate(400%) hue-rotate(45deg);
-    }
+    .filter-y img {
+        filter: grayscale(100%) contrast(var(--filter-x-contrast,1)) invert(var(--filter-x-invert,0));
+        mix-blend-mode: screen;
+      }
+    .filter-y::before {
+        @apply h-full w-full z-10 top-0 left-0 bottom-0 right-0 absolute;
+        background-color: var(--filter-x-bg);
+        mix-blend-mode: darken;
+        content: '';  
+      }
   }
 }
 

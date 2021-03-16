@@ -9,7 +9,7 @@ path: home
     {%set index = loop.index %}
     {%for image in project.data.images %}
     <figure class="text-center mt-3 mr-3 snap-start" data-tags="{{project.data.tags}}">
-          <a href="{{project.url}}"><div class="bg-ms-yellow hover:filter-y" style="background-size: cover; background-position-x: center; background-position-y: center;  background-image:{% imageset image.image, '50 60' %}">{% image image.image, image.caption, " object-fill md:max-h-40 w-auto -square- md:h-40 md:w-40 md:object-cover", "(max-width: 768px) 100vw,  16em" %}</div></a>  
+          <a href="{{project.url}}"><div class="hover:filter-x">{% image image.image, image.caption, "object-fill md:max-h-40 w-auto", "(min-width: 768px) 20em,  100vw" %}</div></a>  
           <figcaption class="">{{index}}.{{loop.index}}</figcaption>  
     </figure>
     {%endfor%}
@@ -18,13 +18,13 @@ path: home
     {%if product.data.images[0] %}
     <figure class="text-center mt-3 mr-3">
           <a href="{{product.url}}">
-            <div class="bg-ms-yellow hover:filter-y">{% image product.data.images[0].image, product.data.images[0].caption, "object-fill md:max-h-40 w-auto -square- md:h-40 md:w-40 md:object-cover", "(min-width: 768px) 16em, 100vw" %}</div></a>  
+            <div class="hover:filter-x">{% image product.data.images[0].image, product.data.images[0].caption, "object-fill md:max-h-40 w-auto", "(min-width: 768px) 20em, 100vw" %}</div></a>  
           <figcaption class="">${{product.data.price}}</figcaption>
     </figure>
     {%endif%}
   {% endfor %}
 
   {%for i in range(1,4) %}
-    <i aria-hidden class="x invisible hidden md:block border-red-200 border-2 w-1/5 h-auto"> </i>
+    <i aria-hidden class="x invisible border-red-200 border-2 w-1/5"> </i>
   {% endfor %}
 </div>

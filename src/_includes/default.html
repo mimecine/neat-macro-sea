@@ -19,10 +19,8 @@
 
   <link rel="preconnect" href="https://app.snipcart.com">
   <link rel="preconnect" href="https://cdn.snipcart.com">
-  <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.29/default/snipcart.css" />
-  <script async defer src="https://cdn.snipcart.com/themes/v3.0.29/default/snipcart.js"></script>
-
-
+  <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.css" />
+  <script async defer src="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.js"></script>
 
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -30,7 +28,7 @@
   {% block head %}{% endblock %}
 </head>
 
-<body class="bg-gray-100 font-thin min-h-screen px-2">
+<body class="bg-ms-bg font-thin min-h-screen px-2 grid grid-flow-row grid-pancake-stack">
   {% include "./partials/navbar.html" %}
 
   <main>
@@ -40,11 +38,11 @@
   {% include "./partials/footer.html" %}
 
   <div hidden id="snipcart" data-api-key="YzQwZjRjOGItODdjNi00NzczLThmNWYtYjM0NWY4MDQ3MTI5NjM3MDMzNjMyMzExNjk2NzM2"
-    data-config-modal-style="side" data-config-add-product-behavior="xnone" class="z-40">
+    data-config-modal-style="side" data-config-add-product-behavior="xnone" class="z-40"></div>
 
     {% if path == "home" %}
-    <!-- Netlify Identity Widget -->
-    <!-- Needed only if you are using Netlify Identity feature -->
+    {# <!-- Netlify Identity Widget -->
+    <!-- Needed only if you are using Netlify Identity feature --> #}
     <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     {% endif %}
 

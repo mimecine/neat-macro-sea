@@ -12,10 +12,10 @@ const markdown = require("markdown-it")({
 
 async function imageShortcode(src, alt, classes, sizes) {
   let metadata = await Image('./src/' + src, {
-    widths: [300, 600, 900, 1200, 2400],
+    widths: [200, 400, 800, 1600, 3200],
     outputDir: "./_site/static/img/",
     urlPath: "/static/img/",
-    formats: ["webp", "jpeg"],
+    formats: ["webp","jpeg"],
     filenameFormat: function (id, src, width, format, options) {
       const extension = path.extname(src);
       const name = path.basename(src, extension);
@@ -27,7 +27,7 @@ async function imageShortcode(src, alt, classes, sizes) {
   let imageAttributes = {
     alt,
     sizes,
-    // loading: "lazy",
+    loading: "lazy",
     decoding: "async",
     class: classes
   };
@@ -35,6 +35,23 @@ async function imageShortcode(src, alt, classes, sizes) {
   // You bet we throw an error on missing alt in `imageAttributes` (alt="" works okay)
   return Image.generateHTML(metadata, imageAttributes, { whitespaceMode: "inline" });
 }
+
+async function imageSetShortcode(src, widths) {
+  let metadata = await Image('./src/' + src, {
+    widths: widths.split(/[^0-9]+/),
+    outputDir: "./_site/static/img/",
+    urlPath: "/static/img/",
+    formats: ["jpeg"],
+    filenameFormat: function (id, src, width, format, options) {
+      const extension = path.extname(src);
+      const name = path.basename(src, extension);
+      return `${name}-${width}w.${format}`;
+    }
+  });
+
+  return `-webkit-image-set(${metadata.jpeg.map((p,i)=>`url(${p.url}) ${i+1}x`).join(', ')})`;
+}
+
 
 module.exports = function (eleventyConfig) {
   // Disable automatic use of your .gitignore
@@ -57,6 +74,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addLiquidShortcode("image", imageShortcode);
   eleventyConfig.addJavaScriptFunction("image", imageShortcode);
 
+  eleventyConfig.addNunjucksAsyncShortcode("imageset", imageSetShortcode);
+  eleventyConfig.addLiquidShortcode("imageset", imageSetShortcode);
+  eleventyConfig.addJavaScriptFunction("imageset", imageSetShortcode);
+
   eleventyConfig.addFilter("md",content=>markdown.render(content));
 
 
@@ -68,7 +89,7 @@ module.exports = function (eleventyConfig) {
   );
 
   // Add Tailwind Output CSS as Watch Target
-  eleventyConfig.addWatchTarget("./_tmp/static/css/style.css");
+    eleventyConfig.addWatchTarget("./_tmp/static/css/style.css");
 
   // Copy Static Files to /_site
   eleventyConfig.addPassthroughCopy({
