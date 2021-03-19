@@ -24,9 +24,9 @@
   :root {
     --ms-bg: #f3f4f6;
     --ms-yellow: #F9D44D;
-    --ms-blue: #3FBEF8;
-    --ms-green: #50E986;
-    --ms-brown: brown;
+    --ms-blue: #ABFFF5;
+    --ms-green: #395937;
+    --ms-brown: #A57A00;
     --ms-orange: orange;
     --ms-primary: var(--ms-orange);
     --filter-x-contrast: 4;
