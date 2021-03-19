@@ -1,4 +1,5 @@
 _site/
+_site.old/
 _tmp/
 .DS_Store
 node_modules/

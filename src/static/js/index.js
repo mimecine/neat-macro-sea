@@ -7,4 +7,13 @@ document.addEventListener('snipcart.ready', () => {
             el.hidden = (_count < 1);
         })
     });        
-});
+    Snipcart.api.session.setLanguage('en', {
+        header: {
+          title_cart_summary: "BAG CHECK !",
+        },
+        actions: {
+          continue_shopping: "Keep adding!",
+        }
+      });
+  });
+

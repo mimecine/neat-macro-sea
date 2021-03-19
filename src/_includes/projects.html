@@ -1,15 +1,15 @@
 ---
 layout: default
+nomenu: true
 ---
-<div class="container max-w-4xl mt-6  px-6 snap-y snap-mandatory snap">
+<div class="xcontainer xmax-w-4xl xmt-6  xpx-6 snap-y snap-mandatory snap">
     <div class="pb-5 mb-5 border-b border-gray-100">
-        <h1 class="xfont-thin text-5xl uppercase tracking-widest">{{title}}</h1>
+        <!-- <h1 class="xfont-thin text-5xl uppercase tracking-widest">{{title}}</h1> -->
     </div>
     {%for image in images%}
-    <div class="w-full h-auto block snap-start">
+    <div class="h-screen border-2 block snap-start">
     <figure>
-        {% image image.image, image.caption, "w-full h-full xmy-1 xlg:my-1", "(min-width: 30em) 100vw, 100vw" %}</a>  
-        <!-- <figcaption class="m-0">{{image.caption}}</figcaption>   -->
+        {% image image.image, image.caption, "object-cover xw-auto xh-screen", "100vw" %}</a>  
     </figure>
     </div>
     {%endfor%}

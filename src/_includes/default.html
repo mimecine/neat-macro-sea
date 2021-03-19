@@ -23,9 +23,6 @@
   <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.css" />
   <script async defer src="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.js"></script>
 
-  {# <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> #}
-
   {% block head %}{% endblock %}
 </head>
 
@@ -47,42 +44,6 @@
     <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     {% endif %}
 
-    {# <script>
-      const swiper = new Swiper('.swiper-container', {
-        // Optional parameters
-        //  direction: 'horizontal',
-        //  loop: false,
-
-        // If we need pagination
-        pagination: {
-          el: '.swiper-pagination',
-          type: 'progressbar'
-        },
-
-        // Navigation arrows
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev'
-        },
-
-        // And if we need scrollbar
-        scrollbar: {
-          el: '.swiper-scrollbar',
-        },
-      });
-    </script> #}
-    <script>
-      document.addEventListener('snipcart.ready', function () {
-        Snipcart.api.session.setLanguage('en', {
-          header: {
-            title_cart_summary: "BAG CHECK",
-          },
-          actions: {
-            continue_shopping: "Continue looking!",
-          }
-        });
-      });
-    </script>
     {% include "./partials/svg-defs.html"%}
 </body>
 
