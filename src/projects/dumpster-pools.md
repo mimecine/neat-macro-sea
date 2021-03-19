@@ -35,5 +35,6 @@ tags:
   - are fun
   - got built
   - are wet
+  - red
 ---
 Macro Sea is working to transform and energize ordinary, underutilized urban spaces. In 2009, we transformed a junkyard in Brooklyn into a lo-fi country club. We made swimming pools out of dumpsters, brought in lounge chairs and cabanas, and built a bocce court. Then, we invited our friends to pool parties in an unlikely location, where they could swim in a trash vessel repurposed in an unexpected way.

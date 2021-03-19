@@ -4,7 +4,7 @@
     "netlify": "npx netlify-cms-proxy-server",
     "eleventy": "eleventy --serve",
     "debug": "set DEBUG=* & eleventy",
-    "css": "cross-env NODE_ENV=production postcss src/static/css/tailwind.css --o _tmp/static/css/style.css --watch",
+    "css": "postcss src/static/css/tailwind.css --o _tmp/static/css/style.css --watch",
     "build": "cross-env NODE_ENV=production eleventy && cross-env NODE_ENV=production postcss src/static/css/tailwind.css --o _site/static/css/style.css"
   },
   "devDependencies": {
