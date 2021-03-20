@@ -15,8 +15,11 @@ images:
   - image: /static/img/live-work-loft.5.Roof-Deck.jpg
     caption: ''
 tags:
-  - Fun
-  - New and Old
+  - feel cosy
+  - happened
+  - feel lofty
+  - you could live in
+  - your mom likes
 
 ---
 Coming Soon…

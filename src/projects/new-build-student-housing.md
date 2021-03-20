@@ -29,8 +29,10 @@ images:
   - image: /static/img/new-build-student-housing.3.2009DS36.jpg
     caption: ''
 tags:
-  - Fun
-  - New and Old
+  - feel cosy
+  - happened
+  - you could live in
+  - your mom likes
 
 ---
 In collaboration with our partners, Macro Sea strategically assembled 6 properties in Queens, New York to develop a ground-up student housing and academic facility in a market with a severe shortage in student housing. Macro sea and DBI leased the 480 bed dormitory to a private American university and delivered the facility to students within 2.5 years of project conception.

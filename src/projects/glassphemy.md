@@ -47,8 +47,12 @@ images:
   - image: /static/img/glassphemy.6.Glassphemy_Photos_Shard-Smoother.jpg
     caption: ''
 tags:
-  - Fun
-  - New and Old
+  - are fun
+  - are very "ecowoke" 
+  - are dangerous
+  - are sporty
+  - are a little trashy
+  - kids like
 
 ---
 GLASSPHEMY! is Macro Sea’s visceral and psychological recycling center. We built a 20-foot high, 30-foot long steel tower specifically designed to allow you to hurl glass bottles at your friends, enemies, and loved ones while they are safely tucked away behind bulletproof glass.

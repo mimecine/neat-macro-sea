@@ -19,8 +19,8 @@ images:
   - image: /static/img/oakdale.3.oakdale-black-background.jpg
     caption: ''
 tags:
-  - Fun
-  - New and Old
+  - should be taken seriously
+  - you could live in
 
 ---
 Macro Sea has been working with the DBI project management team to create a repositioning strategy for a stunning and unique historical property owned by a university on the south shore of Long Island. The 180-acre property includes offices, dormitories, classrooms, sports facilities, a boathouse, and the iconic Bourne Mansion.

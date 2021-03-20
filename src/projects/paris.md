@@ -17,8 +17,8 @@ images:
   - image: /static/img/paris.2.P1000549resized2.jpg
     caption: ''
 tags:
-  - Fun
-  - New and Old
+  - happened
+  - should be taken seriously
 
 ---
 Macro Sea worked with DBI on an adaptive reuse project to create a new home for an American university. Macro Sea and DBI converted a historical, but physically deteriorating building into educational and dormitory facilities for American students studying abroad. New life was brought to a gorgeous property, and the current owners live side-by-side with their new American neighbors.

@@ -30,8 +30,12 @@ images:
   - image: /static/img/bargehotel.6.Barge-Hotel_Inspiration_Barge1.jpg
     caption: ''
 tags:
-  - Fun
-  - New and Old
+  - you could stay in
+  - feels like a party
+  - involves water
+  - are a little trashy
+  - are fun
+  - are new and old
 
 ---
 Traditionally, hotels are all about location, location, location. We wondered what it might look like to create a traveling hotel whose personality can adapt to its surroundings and migrate with the season.

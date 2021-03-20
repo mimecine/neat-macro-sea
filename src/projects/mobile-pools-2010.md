@@ -62,8 +62,12 @@ images:
   - image: /static/img/mobile-pools-2010.10.Pools-2011-5.jpg
     caption: ''
 tags:
-  - Fun
-  - New and Old
+  - involves water
+  - are a little trashy
+  - kids like
+  - are fun
+  - are new and old
+  - are repeatable
 
 ---
 Following our 2009 debut of the Macro Sea dumpster pools, we’ve been working on creating mobile swimming pools that can be set up anywhere. We ended up with a dumpster pool that you can literally unload off of a truck, fill with water, plug in, and go swimming. Our goal was to use these mobile swimming pools, made from objects typically utilized to store and haul junk, in unexpected settings.

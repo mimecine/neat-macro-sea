@@ -76,8 +76,9 @@ images:
       /static/img/g-27-global-institute.13.macrosea_g27_pix_retouch_edit_cwmosier-31-of-38-website-test.jpg
     caption: ''
 tags:
-  - Fun
-  - New and Old
+  - should be taken seriously
+  - happened
+  - are new and old
 
 ---
 We reject the standard operating procedure for a student dormitory. Too often they are bland, cramped, uncomfortable, and uninteresting, with crappy particle board furniture and throwaway excuses for common spaces.
