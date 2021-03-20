@@ -3,7 +3,7 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
   purge: {
     mode: "layers",
-    content: ["./**/*.html"],
+    content: ["./src/**/*.html"],
     options: {
       whitelist: [],
     },

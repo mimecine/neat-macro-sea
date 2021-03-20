@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "npm-run-all --parallel netlify css eleventy",
+    "start": "cross-env NODE_ENV=development npm-run-all --parallel netlify css eleventy",
     "netlify": "npx netlify-cms-proxy-server",
     "eleventy": "eleventy --serve",
     "debug": "set DEBUG=* & eleventy",
