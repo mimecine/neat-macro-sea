@@ -20,7 +20,7 @@ images:
     caption: ''
 tags:
   - happened
-  - should be taken seriously
+  - are serious
 
 ---
 Macro Sea worked with DBI, our sister project management company, on an adaptive reuse project to create a new home for three American universities. Macro Sea and DBI converted Collegio Leoniano, a historically significant but underutilized seminary, into a facility for American students studying abroad.

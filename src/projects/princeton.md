@@ -24,7 +24,7 @@ images:
     caption: ''
 tags:
   - happened
-  - should be taken seriously
+  - are serious
 
 ---
 Macro Sea redeveloped this historic property just outside of Princeton, New Jersey. Formerly a working Catholic seminary and cemetery, the property became a financial burden to the owner after the seminary closed.

@@ -19,7 +19,7 @@ images:
   - image: /static/img/oakdale.3.oakdale-black-background.jpg
     caption: ''
 tags:
-  - should be taken seriously
+  - are serious
   - you could live in
 
 ---

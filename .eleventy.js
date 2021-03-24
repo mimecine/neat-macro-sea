@@ -12,7 +12,7 @@ const markdown = require("markdown-it")({
 
 async function imageShortcode(src, alt, classes, sizes) {
   let metadata = await Image('./src/' + src, {
-    widths: [200, 400, 800, 1600, 3200],
+    widths: [300, 500, 800, 1600 ],
     outputDir: "./_site/static/img/",
     urlPath: "/static/img/",
     formats: ["webp","jpeg"],

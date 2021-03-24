@@ -76,7 +76,7 @@ images:
       /static/img/g-27-global-institute.13.macrosea_g27_pix_retouch_edit_cwmosier-31-of-38-website-test.jpg
     caption: ''
 tags:
-  - should be taken seriously
+  - are serious
   - happened
   - are new and old
 

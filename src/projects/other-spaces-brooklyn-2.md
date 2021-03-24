@@ -22,7 +22,7 @@ images:
   - image: /static/img/other-spaces-brooklyn-2.5.N8-Courtyard-Render.jpg
     caption: ''
 tags:
-  - should be taken seriously
+  - are serious
   - are new and old
 
 ---

@@ -10,7 +10,7 @@ path: home
     {%for image in project.data.images %} #}
     {%set image = project.data.images[0] %}
     <figure class="text-center mt-3 md:mx-3 snap-start" data-tags="{{project.data.tags}}">
-      <a href="{{project.url}}"><div class="bg-gray-200 hover:filter-y">{% image image.image, project.data.title, " object-fill md:h-40 2xl:h-60 w-auto -square- xmd:h-40 xmd:w-40 xmd:object-cover", "(max-width: 768px) 100vw, (max-width: 1536px) 32em, 64em" %}</div></a>  
+      <a href="{{project.url}}"><div class="bg-gray-200 hover:filter-y">{% image image.image, project.data.title, " object-fill md:h-40 2xl:h-60 w-auto -square- xmd:h-40 xmd:w-40 xmd:object-cover", "(min-width: 1540px) 400px, (min-width: 780px) 200px, 100vw" %}</div></a>  
       <figcaption class="">{{ helpers.npad(loop.index) }}</figcaption>  
     </figure>
   {# {%endfor%} #}
@@ -19,7 +19,7 @@ path: home
     {%if product.data.images[0] %}
     {%set image = product.data.images[0] %}
     <figure class="text-center mt-3 md:mx-3">
-            <a href="{{product.url}}"><div class="bg-ms-primary hover:filter-y">{% image image.image, product.data.title, " object-fill md:h-40 2xl:h-60 w-auto -square- xmd:h-40 xmd:w-40 xmd:object-cover", "(max-width: 768px) 100vw, (max-width: 1536px) 32em, 64em" %}</div></a>  
+            <a href="{{product.url}}"><div class="bg-ms-primary hover:filter-y">{% image image.image, product.data.title, " object-fill md:h-40 2xl:h-60 w-auto -square- xmd:h-40 xmd:w-40 xmd:object-cover", "(min-width: 1540px) 400px, (min-width: 780px) 200px, 100vw" %}</div></a>  
             <figcaption class="">${{product.data.price}}</figcaption>
     </figure>
     {%endif%}

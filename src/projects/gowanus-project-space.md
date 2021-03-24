@@ -46,7 +46,7 @@ images:
   - image: /static/img/gowanus-project-space.9.Macrosea-Bk-fixes-cwmosier-31-of-2.jpg
     caption: ''
 tags:
-  - should be taken seriously
+  - are serious
   - happened
   - are new and old
 

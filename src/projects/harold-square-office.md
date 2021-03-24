@@ -26,7 +26,7 @@ images:
   - image: /static/img/harold-square-office.5.OUT-WINDOW-CHAIRS.jpg
     caption: ''
 tags:
-  - should be taken seriously
+  - are serious
   - happened
   - were beaux, and still is
 ---
