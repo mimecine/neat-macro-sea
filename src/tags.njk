@@ -21,7 +21,10 @@ tags:
   {% for thing in collections[ tag ] %}
     {%set image = thing.data.images[0] %}
     <figure class="figure-thumb" data-tags="{{thing.data.tags}}">
-      <a href="{{thing.url}}"><div class="bg-ms-primary hover:filter-y">{% image image.image, thing.data.title, "object-fill md:h-40 2xl:h-60 w-auto -square- xmd:h-40 xmd:w-40 xmd:object-cover", "(max-width: 768px) 100vw, (max-width: 1536px) 32em, 64em" %}</div></a>  
+      <a href="{{thing.url}}">
+        <div class="bg-ms-primary hover:filter-y">
+        {% image image.image, thing.data.title, "object-fill md:h-40 2xl:h-60 w-auto -square- xmd:h-40 xmd:w-40 xmd:object-cover", "(min-width: 1540px) 500px, (min-width: 780px) 300px, 100vw" %}
+        </div></a>  
       <figcaption>{{ helpers.npad(loop.index)  }}</figcaption>  
     </figure>
     {# {% endfor %} #}
