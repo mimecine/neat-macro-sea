@@ -65,8 +65,18 @@
 @layer components {
 
   .figure-thumb {
-    @apply text-center mt-12 md:mx-3;
+    @apply text-center mt-16 md:mx-3;
   }
+
+  .tooltipped::before {
+    content: attr(data-tooltip);
+    @apply absolute border-2 border-black mx-auto w-80 -mt-14 left-1/2 -ml-40 z-50 bg-ms-bg pointer-events-none transition-opacity uppercase py-1.5;
+    opacity: var(--v-show,0);
+  }
+  .tooltipped:hover {
+    --v-show: 1;
+  }
+  
 }
 @layer utilities {
 
@@ -111,4 +121,6 @@
   #snipcart.snipcart .snipcart-cart__secondary-header {
     @apply bg-ms-green;
   }
+
+
 

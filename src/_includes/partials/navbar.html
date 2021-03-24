@@ -39,7 +39,7 @@
         </div>
 
         <!-- Hamburger Menu -->
-        <div class="w-1/2 min-w-max bg-ms-brown absolute z-20 right-0 top-0 text-ms-blue" :class="{ 'block shadow-3xl': menuIsOpen, 'hidden': !menuIsOpen }" @click.away="menuIsOpen = false" x-show.transition="true">
+        <div class="absolute w-full md:w-1/2 h-screen min-w-max bg-ms-brown z-20 right-0 top-0 text-ms-blue" :class="{ 'block shadow-3xl': menuIsOpen, 'hidden': !menuIsOpen }" @click.away="menuIsOpen = false" x-show.transition="true" x-cloak>
 
             <ul class="pt-6 lg:pt-0 list-reset lg:flex justify-center flex-1 items-center">
                 <li class="nav__item mr-3">
@@ -56,18 +56,6 @@
 
     </article>
 
-
-            {# {% if navigation.items %}
-
-                <ul class="pt-6 lg:pt-0 list-reset lg:flex justify-center flex-1 items-center">
-                    {% for item in navigation.items %}
-                        <li class="nav__item mr-3">
-                            <a @click="menuIsOpen = false" class="text-ml inline-block no-underline hover:text-indigo-500 py-2 px-4 " href="{{ item.url }}">{{ item.text }}</a>
-                        </li>
-                    {% endfor %}
-                </ul>
-
-            {% endif %} #}
         </div>
     </nav>
 </div>

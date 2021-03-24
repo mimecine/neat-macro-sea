@@ -8,8 +8,8 @@ path: home
   {% for project in collections.projects %}
     {%set image = project.data.images[0] %}
     <figure class="figure-thumb" data-tags="{{project.data.tags}}">
-      <a href="{{project.url}}">
-        <div class="bg-gray-200 hover:filter-y">
+      <a href="{{project.url}}" class="tooltipped" data-tooltip="{{project.data.title}}">
+        <div class="bg-gray-200 hover:filter-y hover-target" data-title="{{project.data.title}}">
           {% image image.image, project.data.title, " object-fill md:h-40 2xl:h-60 w-auto -square- xmd:h-40 xmd:w-40 xmd:object-cover", "(min-width: 1540px) 500px, (min-width: 780px) 300px, 100vw" %}
         </div>
       </a>  
@@ -20,8 +20,8 @@ path: home
     {%if product.data.images[0] %}
     {%set image = product.data.images[0] %}
     <figure class="figure-thumb">
-            <a href="{{product.url}}">
-              <div class="bg-ms-primary hover:filter-y">
+            <a href="{{product.url}}" class="tooltipped" data-tooltip="{{product.data.title}}">
+              <div class="bg-ms-primary hover:filter-y hover-target" data-title="{{product.data.title}}">
                 {% image image.image, product.data.title, " object-fill md:h-40 2xl:h-60 w-auto -square- xmd:h-40 xmd:w-40 xmd:object-cover", "(min-width: 1540px) 500px, (min-width: 780px) 300px, 100vw" %}
               </div>
             </a>  
