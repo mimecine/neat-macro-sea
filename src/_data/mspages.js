@@ -6,6 +6,8 @@ const fetch = require("node-fetch")
 // https://developer.wordpress.org/rest-api/using-the-rest-api/pagination/
 
 module.exports = async () => {
-    const res = await fetch("http://macro-sea.com/wp-json/wp/v2/pages?orderby=date&order=desc&_fields=id,title,content")
+    // "http://macro-sea.com/wp-json/wp/v2/pages?orderby=date&order=desc&_fields=id,title,content"
+    const base = "http://ms.test/wp-json/wp/v2/project";
+    const res = await fetch(base);
     return await res.json()
 }
