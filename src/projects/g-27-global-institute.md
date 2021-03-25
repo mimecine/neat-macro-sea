@@ -1,6 +1,6 @@
 ---
 title: G.27 Global Institute Berlin
-order: 1
+order: 100
 credits: >-
   PARTNER, CONCEPT, DESIGN + DIRECTION:  
 

@@ -1,6 +1,6 @@
 ---
 title: Paris
-order: 8
+order: 800
 credits: |-
   CONCEPT, DESIGN + DIRECTION:  
   David Belt, Macro Sea, Executive Director  

@@ -1,6 +1,6 @@
 ---
 title: Gowanus Project Space
-order: 3
+order: 300
 credits: |-
   OWNER:  
   David Belt, Macro Sea, Executive Director  

@@ -1,6 +1,6 @@
 ---
 title: Philadelphia Coworking Space
-order: 15
+order: 1500
 credits: |-
   OWNER, CONCEPT, DESIGN + DIRECTION:  
   David Belt, Macro Sea, Executive Director  

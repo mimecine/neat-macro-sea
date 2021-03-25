@@ -1,6 +1,6 @@
 ---
 title: Live-Work Loft
-order: 13
+order: 1300
 credits: Photographs by Jean Bourbon
 images:
   - image: /static/img/live-work-loft.0.Living-Space2.jpg

@@ -1,6 +1,6 @@
 ---
 title: New Lab
-order: 6
+order: 600
 credits: |-
   Development & Design – Macro Sea  
     
