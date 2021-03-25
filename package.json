@@ -28,6 +28,7 @@
     "postcss-preset-env": "^6.7.0",
     "prismjs": "^1.21.0",
     "sharp-cli": "^1.15.0",
+    "smoothscroll-polyfill": "^0.4.4",
     "tailwindcss": "^2.0.4",
     "tailwindcss-scroll-snap": "^1.1.0",
     "tocca": "^2.0.9",

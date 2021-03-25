@@ -98,6 +98,7 @@ module.exports = function (eleventyConfig) {
     "./node_modules/alpinejs/dist/alpine.js": "./static/js/alpine.js",
     "./node_modules/turbolinks/dist/turbolinks.js":"./static/js/turbolinks.js",
     "./node_modules/alpine-turbo-drive-adapter/dist/alpine-turbo-adapter.js":"./static/js/alpine-turbo-adapter.js",
+    "./node_modules/smoothscroll-polyfill/dist/smoothscroll.min.js":"./static/js/smoothscroll.min.js",
     "./node_modules/tocca/Tocca.min.js": "./static/js/Tocca.min.js",
   });
 

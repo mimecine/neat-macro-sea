@@ -41,7 +41,7 @@
     display: none !important;
   }
   [id] {
-    scroll-margin-top: 2ex;
+    -x-scroll-margin-top: 2ex;
   }
   :target {
     /* text-decoration: underline;
@@ -70,13 +70,14 @@
 
   .tooltipped::before {
     content: attr(data-tooltip);
-    @apply absolute border-2 border-black mx-auto w-80 -mt-14 left-1/2 -ml-40 z-50 bg-ms-bg pointer-events-none transition-opacity uppercase py-1.5;
+    @apply absolute border-2 border-black mx-auto w-80 -mt-14 left-1/2 -ml-40 z-20 bg-ms-bg pointer-events-none transition-opacity uppercase py-1.5;
     opacity: var(--v-show,0);
+    
   }
   .tooltipped:hover {
     --v-show: 1;
   }
-  
+
 }
 @layer utilities {
 
@@ -92,16 +93,18 @@
       background-color: var(--filter-x-color);
       background-image: none !important;
     }
+
     .filter-y img {
         filter: grayscale(100%) contrast(var(--filter-x-contrast,1)) invert(var(--filter-x-invert,0));
         mix-blend-mode: screen;
-      }
+    }
+
     .filter-y::before {
         @apply h-full w-full z-10 top-0 left-0 bottom-0 right-0 absolute;
         background-color: var(--filter-x-bg);
         mix-blend-mode: darken;
         content: '';  
-      }
+    }
   }
 }
 
@@ -119,7 +122,7 @@
   }
 
   #snipcart.snipcart .snipcart-cart__secondary-header {
-    @apply bg-ms-green;
+    @apply bg-ms-green text-white text-base;
   }
 
 
