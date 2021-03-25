@@ -1,5 +1,6 @@
 ---
 title: BAM Cultural District RFP
+order: 20
 credits: |-
   CONCEPT, DESIGN & DIRECTION:  
   Craig Greenberg, President, 21c Museum Hotels  
@@ -33,14 +34,13 @@ credits: |-
   Patrick Mc Gowan, CEO, Mc Gowan Builders
 images:
   - image: /static/img/bam-cultural-district-rfp.0.Day-View-resized-for-web.jpg
-    caption: ''
+    caption: ""
   - image: /static/img/bam-cultural-district-rfp.1.Night-View-resized-for-web.jpg
-    caption: ''
+    caption: ""
 tags:
   - are arty
   - feel safe
   - are fun
   - are new and old
-
 ---
 21c Museum Hotels and Macro Sea joined forces on a proposal to develop an energizing and innovative contemporary art museum, hotel, and dining experience in the heart of the Downtown Brooklyn Cultural District. In collaboration with Deborah Burke Partners, the team created a concept which thrives on the unconventional and dynamic, both in design and in its interaction with the public. With a free, 24-hour, public contemporary art museum at its center and a host of 24-hour, public contemporary art museum at its center and a host of cultural partnerships in tow, 21c Brooklyn aimed to usher in the 24/7 activation of the district, helping to make Downtown Brooklyn one of the most innovative and dynamic arts neighborhoods in the nation.

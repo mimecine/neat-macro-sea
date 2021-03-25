@@ -20,11 +20,13 @@ collections:
     delete: true
     editor:
       preview: false
-    summary: "{{title}} - Tagged: {{tags}} "
+    summary: "{{title}}"
+    sortable_fields: ['order','title']
 
     fields:
       - {label: "Title", name: "title", widget: "string" }
-      - {label: "Description", name: "body", widget: "markdown" }
+      - {label: "Ordering", name: "order", widget: "number", required: false, default: 0 }
+      - {label: "Description", name: "body", widget: "markdown", required: false }
       - {label: "Credits", name: "credits", widget: "markdown", required: false }
       - label: "Images"
         name: "images"
@@ -50,6 +52,7 @@ collections:
     summary: "{{title}} - {{price}}"
     fields:
       - {label: "Title", name: "title", widget: "string" }
+      - {label: "Ordering", name: "order", widget: "number", required: false }
       - {label: "Description", name: "body", widget: "markdown" }
       - {label: "Price", name: "price", widget: "number" }
       - label: "Images"

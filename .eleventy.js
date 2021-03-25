@@ -110,6 +110,20 @@ module.exports = function (eleventyConfig) {
   // Copy favicon to route of /_site
   eleventyConfig.addPassthroughCopy("./src/favicon.ico");
 
+
+
+  eleventyConfig.addCollection("ordered_projects", function(collectionApi) {
+
+    items = collectionApi.getFilteredByTag("projects");
+    items.sort((a,b)=>{ a.data.title.length <= b.data.title.length});
+    return items;
+    
+
+  });
+
+
+
+
   // Minify HTML
   if(false) eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
     // Eleventy 1.0+: use this.inputPath and this.outputPath instead
@@ -125,6 +139,8 @@ module.exports = function (eleventyConfig) {
     return content;
   });
 
+
+
   // Let Eleventy transform HTML files as nunjucks
   // So that we can use .html instead of .njk
   return {
@@ -133,4 +149,5 @@ module.exports = function (eleventyConfig) {
     },
     htmlTemplateEngine: "njk",
   };
+
 };

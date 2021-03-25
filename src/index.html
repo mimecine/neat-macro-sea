@@ -5,7 +5,7 @@ path: home
 ---
 
 <div class="mx-auto md:mx-3 md:flex flex-row flex-wrap justify-between items-center content-start">
-  {% for thing in collections.projects %}
+  {% for thing in collections.ordered_projects  %}
     {%set image = thing.data.images[0] %}
     <figure class="figure-thumb" data-tags="{{thing.data.tags}}">
       <a href="{{thing.url}}" class="tooltipped" data-tooltip="{{thing.data.title}}">
