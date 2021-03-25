@@ -68,13 +68,32 @@
     @apply text-center mt-16 md:mx-3;
   }
 
-  .tooltipped::before {
+  .tooltip.tooltip-top-band::before {
     content: attr(data-tooltip);
     @apply absolute border-2 border-black mx-auto w-80 -mt-14 left-1/2 -ml-40 z-20 bg-ms-bg pointer-events-none transition-opacity uppercase py-1.5;
     opacity: var(--v-show,0);
     
   }
-  .tooltipped:hover {
+  .tooltip.tooltip-bottom::before {
+    content: attr(data-tooltip);
+    @apply absolute top-full w-full left-0 z-10 bg-ms-bg pointer-events-none uppercase text-sm;
+    opacity: var(--v-show,0);
+    
+  }
+  .tooltip.tooltip-bottom {
+    @apply relative block;
+  }
+
+  .tooltip.tooltip-inside::after {
+    content: attr(data-tooltip);
+    @apply absolute top-0 bottom-0 left-0 right-0 block pointer-events-none uppercase p-1 text-left align-bottom text-xl;
+    opacity: var(--v-show,0);
+  }
+  .tooltip.tooltip-inside {
+    @apply relative block;
+  }
+
+  .tooltip:hover {
     --v-show: 1;
   }
 

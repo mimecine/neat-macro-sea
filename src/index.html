@@ -8,7 +8,7 @@ path: home
   {% for thing in collections.ordered_projects  %}
     {%set image = thing.data.images[0] %}
     <figure class="figure-thumb" data-tags="{{thing.data.tags}}">
-      <a href="{{thing.url}}" class="tooltipped" data-tooltip="{{thing.data.title}}">
+      <a href="{{thing.url}}" class="tooltip tooltip-inside" data-tooltip="{{thing.data.title}}">
         <div class="bg-gray-200 hover:filter-y hover-target" data-title="{{thing.data.title}}">
           {% image image.image, thing.data.title, " object-fill md:h-40 2xl:h-60 w-auto -square- md:h-40 md:w-40 2xl:w-60 md:object-cover", "(min-width: 1540px) 500px, (min-width: 780px) 300px, 100vw" %}
         </div>
@@ -20,7 +20,21 @@ path: home
     {%if thing.data.images[0] %}
     {%set image = thing.data.images[0] %}
     <figure class="figure-thumb">
-      <a href="{{thing.url}}" class="tooltipped" data-tooltip="{{thing.data.title}}">
+      <a href="{{thing.url}}" class="tooltip tooltip-top-band" data-tooltip="{{thing.data.title}}">
+        <div class="bg-ms-primary hover:filter-y hover-target" data-title="{{thing.data.title}}">
+          {% image image.image, thing.data.title, " object-fill md:h-40 2xl:h-60 w-auto -square- md:h-40 md:w-40 2xl:w-60 md:object-cover", "(min-width: 1540px) 500px, (min-width: 780px) 300px, 100vw" %}
+        </div>
+      </a>  
+      <figcaption>${{thing.data.price}}</figcaption>
+    </figure>
+    {%endif%}
+  {% endfor %}
+
+  {% for thing in collections.products%}
+    {%if thing.data.images[0] %}
+    {%set image = thing.data.images[0] %}
+    <figure class="figure-thumb">
+      <a href="{{thing.url}}" class="tooltip tooltip-bottom" data-tooltip="{{thing.data.title}}">
         <div class="bg-ms-primary hover:filter-y hover-target" data-title="{{thing.data.title}}">
           {% image image.image, thing.data.title, " object-fill md:h-40 2xl:h-60 w-auto -square- md:h-40 md:w-40 2xl:w-60 md:object-cover", "(min-width: 1540px) 500px, (min-width: 780px) 300px, 100vw" %}
         </div>
