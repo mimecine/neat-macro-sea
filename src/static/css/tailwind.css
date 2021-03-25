@@ -68,12 +68,25 @@
     @apply text-center mt-16 md:mx-3;
   }
 
+  .tooltip.tooltip-top-big::before {
+    content: attr(data-tooltip);
+    @apply absolute mx-auto left-0 w-full block -mt-14 bg-ms-bg pointer-events-none transition-opacity uppercase py-1.5 text-4xl;
+    opacity: var(--v-show,0);
+  }
+
+  .tooltip.tooltip-bottom-big::before {
+    content: attr(data-tooltip);
+    @apply absolute mx-auto left-0 w-full block md:mt-44 2xl:mt-64 pointer-events-none transition-opacity uppercase py-1.5 text-4xl;
+    opacity: var(--v-show,0);
+  }
+
   .tooltip.tooltip-top-band::before {
     content: attr(data-tooltip);
     @apply absolute border-2 border-black mx-auto w-80 -mt-14 left-1/2 -ml-40 z-20 bg-ms-bg pointer-events-none transition-opacity uppercase py-1.5;
     opacity: var(--v-show,0);
     
   }
+
   .tooltip.tooltip-bottom::before {
     content: attr(data-tooltip);
     @apply absolute top-full w-full left-0 z-10 bg-ms-bg pointer-events-none uppercase text-sm;

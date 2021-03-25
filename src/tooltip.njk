@@ -4,6 +4,7 @@ title: Macro-Sea
 path: home
 ---
 
+<h3>Inside</h3>
 <div class="mx-auto md:mx-3 md:flex flex-row flex-wrap justify-between items-center content-start">
   {% for thing in collections['involves water']  %}
     {%set image = thing.data.images[0] %}
@@ -35,6 +36,7 @@ path: home
   {% endfor %}
 </div>
 {# xxx #}
+<h3>Bottom</h3>
 <div class="mx-auto md:mx-3 md:flex flex-row flex-wrap justify-between items-center content-start">
   {% for thing in collections['involves water']  %}
     {%set image = thing.data.images[0] %}
@@ -66,6 +68,7 @@ path: home
   {% endfor %}
 </div>
 {# xxx  #}
+<h3>Frame+Top</h3>
 <div class="mx-auto md:mx-3 md:flex flex-row flex-wrap justify-between items-center content-start">
   {% for thing in collections['involves water']  %}
     {%set image = thing.data.images[0] %}
@@ -82,6 +85,72 @@ path: home
     {%set image = thing.data.images[0] %}
     <figure class="figure-thumb" data-tags="{{thing.data.tags}}">
       <a href="{{thing.url}}" class="tooltip tooltip-top-band" data-tooltip="{{thing.data.title}}">
+        <div class="bg-gray-200 hover:filter-y hover-target" data-title="{{thing.data.title}}">
+          {% image image.image, thing.data.title, " object-fill md:h-40 2xl:h-60 w-auto -square- md:h-40 md:w-40 2xl:w-60 md:object-cover", "(min-width: 1540px) 500px, (min-width: 780px) 300px, 100vw" %}
+        </div>
+      </a>  
+      <figcaption>{{ helpers.npad(loop.index) }}</figcaption>
+    </figure>
+  {% endfor %}
+
+  {%for i in range(1,12) %}
+    <figure class="figure-thumb">
+    <i aria-hidden class="invisible hidden md:block border-red-200 border-2 w-1/5 h-auto -square- md:w-40 2xl:w-60"> </i>
+    </figure>
+  {% endfor %}
+</div>
+
+{# xxx  #}
+<h3>Big+Top</h3>
+<div class="mx-auto md:mx-3 md:flex flex-row flex-wrap justify-between items-center content-start">
+  {% for thing in collections['involves water']  %}
+    {%set image = thing.data.images[0] %}
+    <figure class="figure-thumb" data-tags="{{thing.data.tags}}">
+      <a href="{{thing.url}}" class="tooltip tooltip-top-big" data-tooltip="{{thing.data.title}}">
+        <div class="bg-gray-200 hover:filter-y hover-target" data-title="{{thing.data.title}}">
+          {% image image.image, thing.data.title, " object-fill md:h-40 2xl:h-60 w-auto -square- md:h-40 md:w-40 2xl:w-60 md:object-cover", "(min-width: 1540px) 500px, (min-width: 780px) 300px, 100vw" %}
+        </div>
+      </a>  
+      <figcaption>{{ helpers.npad(loop.index) }}</figcaption>
+    </figure>
+  {% endfor %}
+  {% for thing in collections['involves water']  %}
+    {%set image = thing.data.images[0] %}
+    <figure class="figure-thumb" data-tags="{{thing.data.tags}}">
+      <a href="{{thing.url}}" class="tooltip tooltip-top-big" data-tooltip="{{thing.data.title}}">
+        <div class="bg-gray-200 hover:filter-y hover-target" data-title="{{thing.data.title}}">
+          {% image image.image, thing.data.title, " object-fill md:h-40 2xl:h-60 w-auto -square- md:h-40 md:w-40 2xl:w-60 md:object-cover", "(min-width: 1540px) 500px, (min-width: 780px) 300px, 100vw" %}
+        </div>
+      </a>  
+      <figcaption>{{ helpers.npad(loop.index) }}</figcaption>
+    </figure>
+  {% endfor %}
+
+  {%for i in range(1,12) %}
+    <figure class="figure-thumb">
+    <i aria-hidden class="invisible hidden md:block border-red-200 border-2 w-1/5 h-auto -square- md:w-40 2xl:w-60"> </i>
+    </figure>
+  {% endfor %}
+</div>
+
+{# xxx  #}
+<h3>Big+Bottom</h3>
+<div class="mx-auto md:mx-3 md:flex flex-row flex-wrap justify-between items-center content-start">
+  {% for thing in collections['involves water']  %}
+    {%set image = thing.data.images[0] %}
+    <figure class="figure-thumb" data-tags="{{thing.data.tags}}">
+      <a href="{{thing.url}}" class="tooltip tooltip-bottom-big" data-tooltip="{{thing.data.title}}">
+        <div class="bg-gray-200 hover:filter-y hover-target" data-title="{{thing.data.title}}">
+          {% image image.image, thing.data.title, " object-fill md:h-40 2xl:h-60 w-auto -square- md:h-40 md:w-40 2xl:w-60 md:object-cover", "(min-width: 1540px) 500px, (min-width: 780px) 300px, 100vw" %}
+        </div>
+      </a>  
+      <figcaption>{{ helpers.npad(loop.index) }}</figcaption>
+    </figure>
+  {% endfor %}
+  {% for thing in collections['involves water']  %}
+    {%set image = thing.data.images[0] %}
+    <figure class="figure-thumb" data-tags="{{thing.data.tags}}">
+      <a href="{{thing.url}}" class="tooltip tooltip-bottom-big" data-tooltip="{{thing.data.title}}">
         <div class="bg-gray-200 hover:filter-y hover-target" data-title="{{thing.data.title}}">
           {% image image.image, thing.data.title, " object-fill md:h-40 2xl:h-60 w-auto -square- md:h-40 md:w-40 2xl:w-60 md:object-cover", "(min-width: 1540px) 500px, (min-width: 780px) 300px, 100vw" %}
         </div>
