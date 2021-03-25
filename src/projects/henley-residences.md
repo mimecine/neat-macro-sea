@@ -1,5 +1,6 @@
 ---
 title: Henley Residences
+order: 21
 credits: |-
   CONCEPT,DESIGN + DIRECTION  
   David Belt, Macro Sea, Executive Director  

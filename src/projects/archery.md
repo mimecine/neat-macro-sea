@@ -1,6 +1,6 @@
 ---
 title: Archery
-order: 10
+order: 9
 credits: |-
   CONCEPT, DESIGN + DIRECTION:  
   David Belt, Macro Sea, Executive Director  

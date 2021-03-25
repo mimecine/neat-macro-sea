@@ -1,5 +1,6 @@
 ---
 title: Barge Hotel
+order: 16
 credits: |-
   CONCEPT, DESIGN + DIRECTION  
   David Belt, Executive Director, Macro Sea  

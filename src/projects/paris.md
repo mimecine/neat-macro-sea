@@ -1,5 +1,6 @@
 ---
 title: Paris
+order: 8
 credits: |-
   CONCEPT, DESIGN + DIRECTION:  
   David Belt, Macro Sea, Executive Director  
@@ -11,14 +12,13 @@ credits: |-
   Alix Feinkind, DBI, Project Manager
 images:
   - image: /static/img/paris.0.P1000027resized1.jpg
-    caption: ''
+    caption: ""
   - image: /static/img/paris.1.P1000028resizeonblack.jpg
-    caption: ''
+    caption: ""
   - image: /static/img/paris.2.P1000549resized2.jpg
-    caption: ''
+    caption: ""
 tags:
   - happened
   - are serious
-
 ---
 Macro Sea worked with DBI on an adaptive reuse project to create a new home for an American university. Macro Sea and DBI converted a historical, but physically deteriorating building into educational and dormitory facilities for American students studying abroad. New life was brought to a gorgeous property, and the current owners live side-by-side with their new American neighbors.

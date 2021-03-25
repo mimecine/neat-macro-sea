@@ -1,5 +1,6 @@
 ---
 title: New Lab
+order: 6
 credits: |-
   Development & Design – Macro Sea  
     
@@ -16,27 +17,26 @@ credits: |-
   Photography – Spencer Lowell
 images:
   - image: /static/img/new-lab.0.NEW-LAB-img_9871.jpg
-    caption: ''
+    caption: ""
   - image: /static/img/new-lab.1.IMG_4065-BRIGHT-resized.jpg
-    caption: ''
+    caption: ""
   - image: /static/img/new-lab.2.Big-View-2.jpg
-    caption: ''
+    caption: ""
   - image: /static/img/new-lab.3.Stairs.jpg
-    caption: ''
+    caption: ""
   - image: /static/img/new-lab.4.Infinity-Mirror.jpg
-    caption: ''
+    caption: ""
   - image: /static/img/new-lab.5.Conference-Massing.jpg
-    caption: ''
+    caption: ""
   - image: /static/img/new-lab.6.Conference-Room-2.jpg
-    caption: ''
+    caption: ""
   - image: /static/img/new-lab.7.Conference-Room.jpg
-    caption: ''
+    caption: ""
   - image: /static/img/new-lab.8.Shop.jpg
-    caption: ''
+    caption: ""
 tags:
   - are majestic
   - happened
   - feel lofty
-
 ---
 New Lab is a a platform for scaling frontier technologies. They champion the world’s most forward-thinking entrepreneurs and partner with corporate and city stakeholders to catalyze innovation.

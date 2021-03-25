@@ -1,5 +1,6 @@
 ---
 title: Strip Mall
+order: 22
 credits: |-
   CONCEPT, DESIGN + DIRECTION:  
   David Belt, Macro Sea, Executive Director  

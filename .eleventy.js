@@ -113,12 +113,12 @@ module.exports = function (eleventyConfig) {
 
 
   eleventyConfig.addCollection("ordered_projects", function(collectionApi) {
-
-    items = collectionApi.getFilteredByTag("projects");
-    items.sort((a,b)=>{ a.data.title.length <= b.data.title.length});
-    return items;
-    
-
+    // Lower item.data.order = priority. 
+    return collectionApi.getFilteredByTag("projects").sort((a,b)=>{ 
+      let a_ord = Number(a.data.order) || 1000;
+      let b_ord = Number(b.data.order) || 1000;
+      return a_ord - b_ord; 
+    });
   });
 
 

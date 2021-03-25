@@ -1,5 +1,6 @@
 ---
 title: Princeton
+order: 5
 credits: |-
   CONCEPT, DESIGN + DIRECTION:  
   David Belt, Macro Sea, Executive Director  
@@ -11,20 +12,19 @@ credits: |-
   Alix Feinkind, DBI, Project Manager
 images:
   - image: /static/img/princeton.0.2013DS32.401resized.jpg
-    caption: ''
+    caption: ""
   - image: /static/img/princeton.1.2013DS32407resized.jpg
-    caption: ''
+    caption: ""
   - image: /static/img/princeton.2.2013DS32403resized.jpg
-    caption: ''
+    caption: ""
   - image: /static/img/princeton.3.2013DS32409resized.jpg
-    caption: ''
+    caption: ""
   - image: /static/img/princeton.4.2013DS32414resized.jpg
-    caption: ''
+    caption: ""
   - image: /static/img/princeton.5.2013DS32424resized.jpg
-    caption: ''
+    caption: ""
 tags:
   - happened
   - are serious
-
 ---
 Macro Sea redeveloped this historic property just outside of Princeton, New Jersey. Formerly a working Catholic seminary and cemetery, the property became a financial burden to the owner after the seminary closed.

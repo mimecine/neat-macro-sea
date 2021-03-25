@@ -1,5 +1,6 @@
 ---
 title: Oakdale
+order: 20
 credits: |-
   CONCEPT, DESIGN + DIRECTION:  
   David Belt, Macro Sea, Executive Director  

@@ -1,6 +1,6 @@
 ---
 title: BAM Cultural District RFP
-order: 20
+order: 11
 credits: |-
   CONCEPT, DESIGN & DIRECTION:  
   Craig Greenberg, President, 21c Museum Hotels  

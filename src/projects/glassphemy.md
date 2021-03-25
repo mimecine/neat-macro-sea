@@ -1,5 +1,6 @@
 ---
 title: Glassphemy!
+order: 4
 credits: |-
   CONCEPT, DESIGN + DIRECTION:  
   David Belt, Macro Sea, Executive Director  
@@ -33,26 +34,25 @@ credits: |-
   Kim Harty
 images:
   - image: /static/img/glassphemy.0.Glassphemy_Photos_Observing-resized.jpg
-    caption: ''
+    caption: ""
   - image: /static/img/glassphemy.1.IMG_7053resized.jpg
-    caption: ''
+    caption: ""
   - image: /static/img/glassphemy.2.Glassphemy_Inspiration_Recycling-resize1.jpg
-    caption: ''
+    caption: ""
   - image: /static/img/glassphemy.3.Glassphemy_Photos_Throwing-resized.jpg
-    caption: ''
+    caption: ""
   - image: /static/img/glassphemy.4.Glassphemy_Rendering_Vamos-resized.jpg
-    caption: ''
+    caption: ""
   - image: /static/img/glassphemy.5.Glassphemy_Photos_Six-Packsresized.jpg
-    caption: ''
+    caption: ""
   - image: /static/img/glassphemy.6.Glassphemy_Photos_Shard-Smoother.jpg
-    caption: ''
+    caption: ""
 tags:
   - are fun
-  - are very "ecowoke" 
+  - are very "ecowoke"
   - are dangerous
   - are sporty
   - are a little trashy
   - kids like
-
 ---
 GLASSPHEMY! is Macro Sea’s visceral and psychological recycling center. We built a 20-foot high, 30-foot long steel tower specifically designed to allow you to hurl glass bottles at your friends, enemies, and loved ones while they are safely tucked away behind bulletproof glass.
