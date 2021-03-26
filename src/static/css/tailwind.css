@@ -70,19 +70,19 @@
   }
 
   .tooltip {
-    visibility: inherit;
+    @apply visible;
   }
   .tooltip-top-big {
-    visibility: inherit;
+    @apply visible;
   }
   .tooltip-bottom-big {
-    visibility: inherit;
+    @apply visible;
   }
   .tooltip-top-band {
-    visibility: inherit;
+    @apply visible;
   }
   .tooltip-bottom {
-    visibility: inherit;
+    @apply visible;
   }
 
 

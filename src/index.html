@@ -4,7 +4,7 @@ title: Macro-Sea
 path: home
 ---
 
-<div class="mx-auto md:mx-3 md:flex flex-row flex-wrap justify-between items-center content-start">
+<div class="mx-auto md:mx-3 md:flex flex-row flex-wrap justify-between items-center content-start" data-tw-save="tooltip tooltip-top-big tooltip-bottom-big tooltip-inside tooltip-bottom">
   {% for thing in collections.ordered_projects  %}{% if thing.data.draft != true %}
     {%set image = thing.data.images[0] %}
     <figure class="figure-thumb" data-tags="{{thing.data.tags}}">
