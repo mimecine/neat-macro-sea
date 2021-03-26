@@ -88,13 +88,13 @@
 
   .tooltip.tooltip-top-big::before {
     content: attr(data-tooltip);
-    @apply absolute mx-auto left-0 w-full block -mt-14 bg-ms-bg pointer-events-none transition-opacity uppercase py-1.5 text-4xl;
+    @apply absolute mx-auto left-0 w-full block -mt-14 bg-ms-bg pointer-events-none transition-opacity uppercase py-1.5 text-4xl text-ms-primary;
     opacity: var(--v-show,0);
   }
 
   .tooltip.tooltip-bottom-big::before {
     content: attr(data-tooltip);
-    @apply absolute mx-auto left-0 w-full block md:mt-44 2xl:mt-64 pointer-events-none transition-opacity uppercase py-1.5 text-4xl;
+    @apply absolute mx-auto left-0 w-full block md:mt-44 2xl:mt-64 pointer-events-none transition-opacity uppercase py-1.5 text-4xl text-ms-primary;
     opacity: var(--v-show,0);
   }
 
