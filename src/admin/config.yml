@@ -82,65 +82,17 @@ collections:
       - widget: list
         label: tags
         name: tags
-  
-
-  # - label: "Things" 
-  #   label_singular: Thing
-  #   name: thing
-  #   folder: src/thing
-  #   create: true
-  #   delete: true
-  #   editor:
-  #     preview: false
-  #   summary: "{{title}}"
-  #   fields:
-  #     - {label: Title, name: title, widget: string }
-  #     - {label: "Images", name: images, widget: image}
-  #     - {label: Projects, name: projects, widget: relation, multiple: true, collection: projects, value_field: title, search_fields: ['title'] }
 
   - label: "Settings"
     name: "settings"
     editor:
       preview: false
     files:
-      - label: "Categories"
-        name: "categories"
-        file: "src/_data/categories.yaml"
-        fields:
-          - label: "Category"
-            name: "category"
-            widget: string
-            allow_add: true
-      # - label: "Navigation"
-      #   name: "items"
-      #   file: "src/_data/navigation.yaml"
-      #   fields:
-      #     - label: Nav Items
-      #       name: items
-      #       widget: list
-      #       allow_add: true
-      #       collapsed: false
-      #       fields:
-      #         - { label: Title, name: text, widget: string }
-      #         - { label: URL, name: url, widget: string }
-      # - label: "Quick Links"
-      #   name: "links"
-      #   file: "src/_data/quicklinks.yaml"
-      #   fields:
-      #     - label: Nav Items
-      #       name: links
-      #       widget: list
-      #       collapsed: false
-      #       fields:
-      #         - { label: Title, name: title, widget: string }
-      #         - { label: URL, name: url, widget: string }
-      #         - { label: Description, name: desc, widget: string }
-      - label: "Settings"
-        name: "settings"
-        file: "src/_data/settings.yaml"
-        fields:
-          - { label: "Hover Color", name: "hover_color", widget: color }
-          # - { label: Name, name: name, widget: string }
-          # - { label: Author, name: author, widget: string }
-          # - { label: URL, name: url, widget: string }
+    - label: "Site"
+      name: "site"
+      file: "src/_data/settings.yaml"
+      fields:
+        - { label: "Info", name: "info", widget: "markdown", required: false }
+        # - { label: "Hover Color", name: "hover_color", widget: color }
+    
 

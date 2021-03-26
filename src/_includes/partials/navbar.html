@@ -42,28 +42,27 @@
         </div>
 
         <!-- Hamburger Menu -->
-        <div class="absolute w-full md:w-1/3 h-screen min-w-max bg-ms-brown z-20 right-0 top-0 text-ms-blue py-1 lg:py-3 lg:px-0 mx-auto" :class="{ 'block shadow-3xl': menuIsOpen, 'hidden': !menuIsOpen }" @click.away="menuIsOpen = false" x-show.transition="true" x-cloak>
+        <div class="absolute w-full md:w-1/3 h-screen min-w-max bg-ms-brown z-20 right-0 top-0 text-ms-blue xpy-1 xlg:py-3 lg:px-0 mx-auto" :class="{ 'block shadow-3xl': menuIsOpen, 'hidden': !menuIsOpen }" @click.away="menuIsOpen = false" x-show.transition="true" x-cloak>
 
-            <ul class="pt-6 lg:pt-0 list-reset lg:flex justify-center flex-1 items-center">
-                <li class="nav__item mr-3">
-                    <a @click="projectListIsOpen = true; infoTabIsOpen = false;" class="text-ml inline-block no-underline hover:underline py-2 px-4 uppercase" href="#">Projects</a>
-                    <a @click="infoTabIsOpen = true; projectListIsOpen = false;" class="text-ml inline-block no-underline hover:underline py-2 px-4 uppercase" href="#">Info</a>
+            <ul class="pt-0 lg:pt-0 list-reset lg:flex justify-left flex-1 items-center">
+                <li class="nav__item mr-3 pt-1">
+                    <a @click="projectListIsOpen = true; infoTabIsOpen = false;" class="text-ml inline-block no-underline hover:underline py-2 px-4 uppercase" :class="{'underline':projectListIsOpen}" href="#">Projects</a>
+                    <a @click="infoTabIsOpen = true; projectListIsOpen = false;" class="text-ml inline-block no-underline hover:underline py-2 px-4 uppercase" :class="{'underline':infoTabIsOpen}" href="#">Info</a>
                 </li>
             </ul>
 
-                <div class="font-thin text-xs" x-show="projectListIsOpen">
-                    <ul class="py-6 lg:py-3 list-reset justify-center flex-1 xitems-center flex-wrap w-96 mx-auto">
-                    {%for item in collections.projects %}
-                        <li class="nav__item mr-3 text-sm md:text-sm lg:text-sm">
-                            <a @click="isOpen = false" class=" uppercase inline-block no-underline hover:text-ms-primary py-0 px-4 " href="{{item.url}}">{{ item.data.title }}</a>
-                        </li>
-                    {%endfor%}
-                    </ul>                    
-                    {# {{ credits| md | safe }} #}
-                </div>
-                <div class="font-thin text-xs w-96 mx-auto" x-show="infoTabIsOpen">
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-                </div>
+            <div class="font-thin text-xs" x-show="projectListIsOpen">
+                <ul class="py-6 lg:py-3 list-reset justify-left flex-1 xitems-center flex-wrap xw-96 mx-auto">
+                {%for item in collections.projects %}
+                    <li class="nav__item mr-3 text-sm md:text-sm lg:text-sm">
+                        <a @click="isOpen = false" class=" uppercase inline-block no-underline hover:text-ms-primary py-0 px-4 " href="{{item.url}}">{{ item.data.title }}</a>
+                    </li>
+                {%endfor%}
+                </ul>              
+            </div>
+            <div class="font-thin text-sm md:text-sm lg:text-sm mx-auto prose text-ms-blue" x-show="infoTabIsOpen">
+                {{ settings.info | md | safe }}
+            </div>
 
             </article>
 
