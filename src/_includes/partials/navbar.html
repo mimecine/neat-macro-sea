@@ -22,7 +22,7 @@
             <div>
                 <button hidden class="snipcart-checkout px-2">$<sup class="text-xs md:text-sm text-ms-primary">(<span class="snipcart-items-count"></span>)</sup></button>
             </div>
-            <button @click="menuIsOpen = !menuIsOpen" type="button" class="focus:outline-none focus:text-primary-500" :class="{ 'transition transform-180 text-ms-blue': menuIsOpen }" aria-label="Menu">
+            <button @click="menuIsOpen = !menuIsOpen" type="button" class="focus:outline-none focus:text-primary-500" :class="{ 'transition transform-180 text-ms-blue': menuIsOpen }" aria-label="Menu" >
                 <svg x-show="menuIsOpen" class="fill-current" viewBox="0 0 35 35" style="width:1em; height:1em;"><use xlink:href="#cross" x="0" y="0" /></svg>
                 <svg x-show="!menuIsOpen" class="fill-current" viewBox="0 0 35 35" style="width:1em; height:1em;"><use xlink:href="#hamburger" x="0" y="0" /></svg>
             </button>
@@ -67,7 +67,11 @@
                 </ul>              
             </div>
             <div class="font-thin text-sm md:text-sm lg:text-sm ml-4 pt-4 prose text-ms-blue w-80" x-show="infoTabIsOpen">
+                {%if isproject %}
+                {{ credits | md | safe }}
+                {% else %}
                 {{ settings.info | md | safe }}
+                {%endif%}
             </div>
 
             </article>
