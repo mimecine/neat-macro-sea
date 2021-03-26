@@ -1,0 +1,30 @@
+---
+layout: default
+nomenu: true
+isproject: true
+permalink: /things-that/{{tags[1]|slug}}/{{title}}/
+---
+<div id="pane" class="absolute top-0 bottom-0 w-screen h-screen snap overflow-y-scroll snap-y snap-mandatory" tabindex="100">
+    {%for image in images%}
+    <!-- <div class="h-screen block snap-start grid place-items-center"> -->
+    <figure>
+        {% image image.image, image.caption, "object-cover xobject-contain w-screen h-screen object-center snap-start", "100vw" %}</a>  
+    </figure>
+    <!-- </div> -->
+    {%endfor%}
+
+
+
+
+    {# <article class="prose lg:prose-xl my-4 mx-auto">
+
+          <div>{{ content | safe }}</div>
+
+          <div class="font-thin text-xs border-t italic">
+            {{ credits| md | safe }}
+          </div>
+
+    </article> #}
+</div>
+<button onclick="history.go(-1)"><svg viewBox="0 0 35 35"  class="fill-current absolute bottom-6 left-6   w-8 h-8 rounded-full bg-ms-bg p-1 cursor-pointer" xstyle="width:1em; height:1em;"><use xlink:href="#arrow_down_left" x="0" y="0" /></svg></button>
+<button onclick="document.querySelector('#pane').scrollBy({top:document.body.scrollHeight,behavior:'smooth'})"><svg viewBox="0 0 35 35"  class="fill-current absolute bottom-6 left-1/2 w-8 h-8 rounded-full bg-ms-bg p-1 cursor-pointer" xstyle="width:1em; height:1em;"><use xlink:href="#arrow_down" x="0" y="0" /></svg></button>
