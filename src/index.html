@@ -8,7 +8,7 @@ path: home
   {% for thing in collections.ordered_projects  %}{% if thing.data.draft != true %}
     {%set image = thing.data.images[0] %}
     <figure class="figure-thumb" data-tags="{{thing.data.tags}}">
-      <a href="{{thing.url}}" class="tooltip tooltip-top-big" data-tooltip="{{thing.data.title}}">
+      <a href="{{thing.url}}" class="tooltip tooltip-bottom-big" data-tooltip="{{thing.data.title}}">
         <div class="bg-gray-200 hover:filter-y hover-target h-40">
           {# {% image image.image, thing.data.title, " object-fill md:h-40 2xl:h-60 w-auto -square- xmd:h-40 xmd:w-40 x2xl:w-60 xmd:object-cover", "(min-width: 1540px) 500px, (min-width: 780px) 300px, 100vw" %} #}
           {% image image.image, thing.data.title, " object-fill md:h-40 2xl:h-60 w-auto -square- md:h-40 md:w-40 2xl:w-60 md:object-cover", "(min-width: 1540px) 240px, (min-width: 780px) 160px, 100vw" %}

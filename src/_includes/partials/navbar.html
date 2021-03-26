@@ -46,8 +46,8 @@
 
             <ul class="pt-0 lg:pt-0 list-reset lg:flex justify-left flex-1 items-center">
                 <li class="nav__item mr-3 pt-1">
-                    <a @click="projectListIsOpen = true; infoTabIsOpen = false;" class="text-ml inline-block no-underline hover:underline py-2 px-4 uppercase" :class="{'underline':projectListIsOpen}" href="#">Projects</a>
-                    <a @click="infoTabIsOpen = true; projectListIsOpen = false;" class="text-ml inline-block no-underline hover:underline py-2 px-4 uppercase" :class="{'underline':infoTabIsOpen}" href="#">Info</a>
+                    <a @click="projectListIsOpen = true; infoTabIsOpen = false;" class="text-ml inline-block no-underline hover:text-ms-primary py-2 px-4 uppercase op" :class="{'opacity-70':projectListIsOpen}" href="#">Projects</a>
+                    <a @click="infoTabIsOpen = true; projectListIsOpen = false;" class="text-ml inline-block no-underline hover:text-ms-primary py-2 px-4 uppercase" :class="{'opacity-70':infoTabIsOpen}" href="#">Info</a>
                 </li>
             </ul>
 
@@ -60,7 +60,7 @@
                 {%endfor%}
                 </ul>              
             </div>
-            <div class="font-thin text-sm md:text-sm lg:text-sm mx-auto prose text-ms-blue" x-show="infoTabIsOpen">
+            <div class="font-thin text-sm md:text-sm lg:text-sm ml-4 pt-4 prose text-ms-blue w-96" x-show="infoTabIsOpen">
                 {{ settings.info | md | safe }}
             </div>
 

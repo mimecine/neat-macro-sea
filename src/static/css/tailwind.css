@@ -64,9 +64,27 @@
 
 @layer components {
 
+
   .figure-thumb {
     @apply text-center mt-16 md:mx-3;
   }
+
+  .tooltip {
+    visibility: inherit;
+  }
+  .tooltip-top-big {
+    visibility: inherit;
+  }
+  .tooltip-bottom-big {
+    visibility: inherit;
+  }
+  .tooltip-top-band {
+    visibility: inherit;
+  }
+  .tooltip-bottom {
+    visibility: inherit;
+  }
+
 
   .tooltip.tooltip-top-big::before {
     content: attr(data-tooltip);
