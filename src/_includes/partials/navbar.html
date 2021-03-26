@@ -9,7 +9,7 @@
 
         <!--Toggle button (hidden on large screens)-->
         <button @click="isOpen = !isOpen" type="button" class="{{ 'invisible' if nomenu == true }} m-auto max-w-screen-sm flex justify-center align-bottom block xtext-gray-500 focus:outline-none focus:text-primary-500" :class="{ 'transition transform-180': isOpen }" aria-label="Menu">
-            <div>THINGS THAT <span class="xborder-b border-current min-w-2/5 mx-0 uppercase text-sm">{{tag | default('...') | safe }}</span></div>
+            <div>SORT BY THINGS THAT <span class="xborder-b border-current min-w-2/5 mx-0 uppercase text-sm">{{tag | default('...') | safe }}</span></div>
         </button>
 
         <div class="flex justify-end xw-1/3 pr-2 md:pr-6 z-30">
