@@ -17,7 +17,7 @@ path: home
       <figcaption>{{ helpers.npad(loop.index) }}</figcaption>
     </figure>
   {% endfor %}
-  {% for thing in collections['Make us happy']]  %}
+  {% for thing in collections['Make us happy']  %}
     {%set image = thing.data.images[0] %}
     <figure class="figure-thumb" data-tags="{{thing.data.tags}}">
       <a href="{{thing.url}}" class="tooltip tooltip-inside" data-tooltip="{{thing.data.title}}">
