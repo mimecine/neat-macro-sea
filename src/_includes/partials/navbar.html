@@ -29,11 +29,11 @@
                 <ul class="py-6 lg:py-3 list-reset xlg:flex justify-center flex-1 xitems-center flex-wrap w-96 mx-auto">
                     {%for item in helpers.collectionTags(collections.projects,collections) %}
                         <li class="nav__item mr-3 text-sm md:text-sm lg:text-sm">
-                            <a @click="isOpen = false" class=" uppercase inline-block no-underline hover:text-ms-primary py-0 px-4 " href="/tags/{{helpers.slug(item) }}">{{ item }}</a>
+                            <a @click="isOpen = false" class=" uppercase inline-block no-underline hover:text-ms-primary py-0 px-4 " href="/things-that/{{helpers.slug(item) }}">{{ item }}</a>
                         </li>
                     {%endfor%}
                         <li class="nav__item mr-3 text-sm md:text-sm lg:text-sm">
-                            <a @click="isOpen = false" class=" uppercase inline-block no-underline hover:text-ms-primary py-0 px-4 " href="/tags/you-can-buy">you can buy</a>
+                            <a @click="isOpen = false" class=" uppercase inline-block no-underline hover:text-ms-primary py-0 px-4 " href="/things-that/you-can-buy">you can buy</a>
                         </li>
                         <li class="nav__item mr-3 mt-3 text-sm md:text-sm lg:text-sm">
                             <a @click="isOpen = false" class=" uppercase inline-block no-underline hover:text-ms-primary py-0 px-4 " href="/">All</a>

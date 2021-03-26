@@ -38,8 +38,6 @@ images:
   - image: /static/img/gowanus-project-space.9.Macrosea-Bk-fixes-cwmosier-31-of-2.jpg
     caption: ""
 tags:
-  - are serious
-  - happened
-  - are new and old
+  - Pay our bills
 ---
 Macro Sea’s Brooklyn project space, steps from the Gowanus canal, occupies the ground floor of a former warehouse. Working with our sister company DBI, Macro Sea rehabilitated the historic facade and created 4,000 sf of flexible studio, meeting and exhibition spaces.

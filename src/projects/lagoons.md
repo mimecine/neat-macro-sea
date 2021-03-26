@@ -25,10 +25,7 @@ images:
   - image: /static/img/lagoons.4.Lagoon-Rendering-1.jpg
     caption: ''
 tags:
-  - involves water
-  - are a little trashy
-  - kids like
-  - are fun
+  - Make us happy
 
 ---
 Inspiration – Blue Lagoon

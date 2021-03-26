@@ -18,8 +18,7 @@ images:
   - image: /static/img/strip-mall.2.aB-6D63ys9jS4dsbjPJihAtybhDk50cQelC9k69WW3s.jpg
     caption: ''
 tags:
-  - are a little trashy
-  - are fun
+  - Make us happy
 
 ---
 Macro Sea collaborated with architects, artists, and retailers nationwide to transform the American strip mall. By stripping and altering its common architectural features, adding community space and involvement, and carefully selecting and curating vendors and the space itself, Macro Sea hopes to create and promote a place for people to shop, meet, learn, and engage with one another.

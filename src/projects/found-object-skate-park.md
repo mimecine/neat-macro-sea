@@ -45,9 +45,6 @@ images:
   - image: /static/img/found-object-skate-park.7.Skatepark_Inspiration_Beam.jpg
     caption: ""
 tags:
-  - are a little trashy
-  - kids like
-  - are fun
-  - are new and old
+  - Make us happy
 ---
 Skating has become thoroughly embedded into the American story, and every suburb has a skatepark where soccer moms can safely take their fine young shredders and comfortably converse over finger sandwiches and decaf soy lattes. We say NO!

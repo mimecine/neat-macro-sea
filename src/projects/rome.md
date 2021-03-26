@@ -20,8 +20,7 @@ images:
   - image: /static/img/rome.3.Romeaulamagnaonblack.jpg
     caption: ''
 tags:
-  - happened
-  - are serious
+  - Pay our bills
 
 ---
 Macro Sea worked with DBI, our sister project management company, on an adaptive reuse project to create a new home for three American universities. Macro Sea and DBI converted Collegio Leoniano, a historically significant but underutilized seminary, into a facility for American students studying abroad.

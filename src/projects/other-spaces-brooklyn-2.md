@@ -23,8 +23,7 @@ images:
   - image: /static/img/other-spaces-brooklyn-2.5.N8-Courtyard-Render.jpg
     caption: ''
 tags:
-  - are serious
-  - are new and old
+  - We are thinking about
 
 ---
 Other Spaces Brooklyn was conceived with the basic premise that students are coming to New York City as travelers seeking authentic experiences and not as passive tourists.  Building off of the success of our G.27 Global Institute in Berlin, Other Spaces Brooklyn was designed to transcend conventional student housing through a combination of custom furniture and shared spaces that are designed not as an afterthought but as the soul of the building.  Upon completion in fall 2018, Other Spaces Brooklyn will be the hub of an international network of student residences in the best cities in the world and of a global temporal community of students.

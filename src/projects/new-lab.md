@@ -35,8 +35,6 @@ images:
   - image: /static/img/new-lab.8.Shop.jpg
     caption: ""
 tags:
-  - are majestic
-  - happened
-  - feel lofty
+  - Pay our bills
 ---
 New Lab is a a platform for scaling frontier technologies. They champion the world’s most forward-thinking entrepreneurs and partner with corporate and city stakeholders to catalyze innovation.

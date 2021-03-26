@@ -27,8 +27,6 @@ images:
   - image: /static/img/harold-square-office.5.OUT-WINDOW-CHAIRS.jpg
     caption: ''
 tags:
-  - are serious
-  - happened
-  - were beaux, and still is
+  - Pay our bills
 ---
 A 10,000 sq ft office for Macro Sea, DBI Projects and DBI Construction Consultants on the 9th floor of a Beaux Arts building at Herald Square.

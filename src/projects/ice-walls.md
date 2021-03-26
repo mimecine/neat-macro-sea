@@ -28,10 +28,7 @@ images:
   - image: /static/img/ice-walls.7.ice-walls-silo-resize.jpg
     caption: ''
 tags:
-  - involves water
-  - are dangerous
-  - kids like
-  - are fun
+  - Make us happy
 
 ---
 Every neighborhood has its share of vacant lots. They are generally depressing, stagnant, and attract large quantities of detritus. Most of them are stuck in a holding pattern until a developer comes along and snatches them up for the next shiny new luxury condo project.
