@@ -35,7 +35,7 @@ collections:
         fields:
           - {label: "Image", name: "image", widget: "image" }
       - widget: list
-        label: "Things that... (comma-separated)"
+        label: "The 'Things that...'"
         name: tags
         required: false
 
