@@ -5,9 +5,6 @@ isproject: true
 permalink: /things-that/{{tags[1]|slug}}/{{title|slug}}/
 ---
 <div id="pane" class="absolute top-0 bottom-0 w-screen h-screen snap overflow-y-scroll snap-y snap-mandatory" tabindex="100">
-    {% if tags[1] %}
-    <h3 class="absolute z-30 uppercase text-lg"> &gt; <a href="/things-that/{{ helpers.slug(tags[1]) }}">{{tags[1]}}</a> &gt; {{title}} </h3>
-    {% endif %}
     {%for image in images%}
     <figure>
         {% image image.image, image.caption, "object-cover xobject-contain w-screen h-screen object-center snap-start", "100vw" %}</a>  
